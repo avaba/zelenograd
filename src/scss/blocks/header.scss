@@ -1,0 +1,87 @@
+$pfx: "header";
+
+.#{$pfx} {
+	/* background: #fff; */
+	padding: 25px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	&__wrap {
+		display: grid;
+		position: relative;
+		grid-template-columns: 310px 1fr;
+		grid-template-areas: "logo header";
+		column-gap: $grid-gap;
+	}
+	&__logo {
+		grid-area: logo;
+	}
+	&__right {
+		display: grid;
+		justify-content: end;
+		grid-template-columns: repeat(2, auto) 163px;
+		grid-template-areas: "phone call menu";
+		column-gap: $grid-gap;
+		align-items: center;
+		grid-area: header;
+	}
+	&__phone {
+		display: grid;
+		grid-template-columns: auto auto;
+		align-items: center;
+		grid-area: phone;
+		img {
+			margin-right: 9px;
+		}
+		a {
+			color: $bodyColor;
+			font-weight: bold;
+		}
+	}
+	&__call {
+		grid-area: call;
+		a {
+			color: $accent;
+		}
+	}
+	&__menu {
+		display: grid;
+		justify-content: end;
+		align-items: center;
+		grid-area: menu;
+		a {
+			display: grid;
+			align-items: center;
+			grid-template-columns: auto minmax(28px, 19px);
+			color: $bodyColor;
+			font-weight: 400;
+			column-gap: $grid-gap-sm;
+			&:hover {
+				.#{$pfx}__menu_hamburger {
+					span:nth-of-type(2) {
+						width: 100%;
+						transition: all .2s;
+					}
+				}
+			}
+		}
+		&_hamburger {
+			flex-direction: column;
+			height: 19px;
+			justify-content: space-between;
+			display: flex;
+			span {
+				height: 2px;
+				width: 100%;
+				background: $accent;
+				display: block;
+				&:nth-of-type(2) {
+					width: 21px;
+					transition: all .2s;
+				}
+			}
+		}
+	}
+}

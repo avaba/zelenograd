@@ -1,0 +1,22 @@
+<% var data = { title: "Главная", author: "sm" }; %> 
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="main">
+
+	<section class="home-block">
+		<div class="container">
+			<div class="home-block__wrap">
+				<div class="home-block__col">
+					<h1>Квартиры<br> в Краснодаре<br> от 1 млн руб.</h1>
+				</div>
+				<div class="home-block__col">
+					<img src="img/bg-home.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<%= _.template(require('./../includes/modals.html').default)() %> 
+<%= _.template(require('./../includes/footer.html').default)(data) %>

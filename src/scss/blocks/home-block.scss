@@ -1,0 +1,15 @@
+$pfx: "home-block";
+
+.#{$pfx} {
+	padding-top: 144px;
+	height: 100vh;
+	min-height: 600px;
+	h1 {
+		font-family: "Museo Cyrl";
+		font-size: $fontSize3XL;
+		line-height: $lineHeightHeading;
+	}
+	&__wrap {
+		display: grid;
+	}
+}

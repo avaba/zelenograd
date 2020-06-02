@@ -1,0 +1,74 @@
+.slick-arrow {
+	font-size: 0;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		transition: all .2s;
+	}
+	&:after {
+		content: '';
+		position: relative;
+		display: inline-block;
+		width: 9px;
+		height: 16px;
+		background: url(../img/arrow.svg);
+		z-index: 1;
+	}
+	&:hover {
+		cursor: pointer;
+		transition: all .2s;
+		&:before {
+			opacity: 1;
+			transition: all .2s;
+		}
+	}
+	&.slick-disabled {
+		background: $disabled !important;
+		&:before {
+			background: $disabled !important;
+		}
+		&:hover {
+			cursor: auto;
+		}
+	}
+}
+
+.slick-prev {
+	border-radius: 0% 60% 0% 60%;
+	background: $gradientLinearHover;
+	left: -30px;
+	&:before {
+		border-radius: 0% 60% 0% 60%;
+	}
+	&:after {
+		transform: rotate(180deg);
+	}
+	&:hover {
+		&:before {
+			background: $gradientLinear;
+		}
+	}
+}
+
+.slick-next {
+	background: $gradientLinear;
+	border-radius: 60% 0 60%;
+	right: -30px;
+	&:before {
+		background: $gradientLinearHover;
+		border-radius: 60% 0 60%;
+	}
+}

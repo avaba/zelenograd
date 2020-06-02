@@ -5,8 +5,10 @@
 @import "./_type.scss";
 
 @import "./pugins/alerts.scss";
-@import "./pugins/swiper.scss";
 @import "./pugins/nouislider.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+// @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "./pugins/slick.scss";
 
 // functions
 @import "./functions/colors.scss";
@@ -16,6 +18,8 @@
 @import "./blocks/header.scss";
 @import "./blocks/home-block.scss";
 @import "./blocks/about.scss";
+@import "./blocks/presentation.scss";
+@import "./blocks/stock.scss";
 
 // components end
 

@@ -38,20 +38,21 @@ $bodyBackground: #ffffff;
 $bodyBackground-invert: #1b1d1f;
 $plainBackground: #F9F9F9; // Заливка блоков
 $plainBackgroundDarker: #d5e5ff;
+$disabled: #D9D9D9;
 
 /*
    * 3. Шрифты
    *    изменяются только в режиме контруктора
    *    на сайте использовать sass переменные, так как responsive font size не работает с css variables
    */
-$fontSizeXS: 0.75rem; // 12px
-$fontSizeSM: 0.875rem; // 14px
-$fontSizeBASE: 1rem; // 16px
-$fontSizeMD: 1.125rem; // 18px
-$fontSizeLG: 1.25rem; // 20px
-$fontSizeXL: 1.5rem; // 24px
-$fontSize2XL: 2.5rem; // 36px
-$fontSize3XL: 3.4rem; // 48px
+$fontSizeXS: 0.75rem; // 13.5px
+$fontSizeSM: 0.875rem; // 15px
+$fontSizeBASE: 1rem; // 18px
+$fontSizeMD: 1.125rem; // 20px
+$fontSizeLG: 1.25rem; // 22px
+$fontSizeXL: 1.38rem; // 25px
+$fontSize2XL: 2.5rem; // 45px
+$fontSize3XL: 3.4rem; // 61px
 
 
 /*

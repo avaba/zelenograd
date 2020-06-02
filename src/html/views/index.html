@@ -16,7 +16,7 @@
 								<input type="tel" class="js-phone required" autocomplete="off" name="ORDER[PHONE]" placeholder="+7 (___) ___-__-__">
 							</div>
 							<div class="home-offer__form-col">
-								<button class="form-button"><span>Узнать больше</span></button>
+								<button class="form-button-primary"><span>Узнать больше</span></button>
 							</div>
 							<div class="home-offer__form-col form-checkbox">
 								<label class="checkbox">
@@ -43,29 +43,53 @@
 	<section class="about">
 		<div class="container">
 			<div class="about__wrap">
-				<div class="about__wrap-col about__left">
-					<h2>Дом в тихом районе</h2>
-					<p>ЖК «Зеленодар» — монолитно-кирпичный дом на улице 3-я Трудовая, в северной части Краснодара. Уютный район удалён от городского шума. Здесь много частных и малоэтажных домов. Тихое местечко для размеренной жизни.</p>
+				<div class="about__left">
+					<h2 class="about__wrap-title">Дом в тихом районе</h2>
+					<p class="about__wrap-desc">ЖК «Зеленодар» — монолитно-кирпичный дом на улице 3-я Трудовая, в северной части Краснодара. Уютный район удалён от городского шума. Здесь много частных и малоэтажных домов. Тихое местечко для размеренной жизни.</p>
 					<a class="link" href="#"><img src="img/download.svg" alt="">Скачать документы</a>
 				</div>
-				<div class="about__wrap-col about__right">
-					<div class="about__right_item">
-						<span class="about__right_item-title">1 ЛИТЕР</span>
+				<div class="about__right h-end">
+					<div class="about__right_item d-flex f-column">
+						<span class="about__right_item-title">1 литер</span>
 						<span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
 					</div>
-					<div class="about__right_item">
-						<span class="about__right_item-title">2 ЛИТЕР</span>
+					<div class="about__right_item d-flex f-column">
+						<span class="about__right_item-title">2 литер</span>
 						<span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
 					</div>
-					<div class="about__right_item">
-						<span class="about__right_item-title">3 ЛИТЕР</span>
+					<div class="about__right_item d-flex f-column">
+						<span class="about__right_item-title">3 литер</span>
 						<span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
 					</div>
-					<div class="about__right_item">
+					<div class="about__right_item d-flex f-column">
 						<span class="about__right_item-title">214-ФЗ</span>
 						<span class="about__right_item-text">строительство по закону</span>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="presentation">
+		<div class="container">
+			<h3 class="presentation__title">Получите презентацию о ЖК</h3>
+			<div class="presentation__form">
+				<div class="presentation__form-col form-input">
+					<input type="email" class="js-email required" autocomplete="off" name="ORDER[EMAIL]" placeholder="E-mail">
+				</div>
+				<div class="presentation__form-col">
+					<button class="form-button-primary"><span>Получить презентацию</span></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="stock">
+		<div class="container">
+			<div class="stock-slider">
+				<%= _.template(require('./../includes/blocks/stockSlide.html').default)() %>
+				<%= _.template(require('./../includes/blocks/stockSlide.html').default)() %>
+				<%= _.template(require('./../includes/blocks/stockSlide.html').default)() %>
 			</div>
 		</div>
 	</section>

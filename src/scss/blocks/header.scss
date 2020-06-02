@@ -21,7 +21,7 @@ $pfx: "header";
 	&__right {
 		display: grid;
 		justify-content: end;
-		grid-template-columns: repeat(2, auto) 163px;
+		grid-template-columns: repeat(2, auto) 172px;
 		grid-template-areas: "phone call menu";
 		column-gap: $grid-gap;
 		align-items: center;
@@ -32,6 +32,7 @@ $pfx: "header";
 		grid-template-columns: auto auto;
 		align-items: center;
 		grid-area: phone;
+		margin-bottom: 35px;
 		img {
 			margin-right: 9px;
 		}
@@ -42,8 +43,12 @@ $pfx: "header";
 	}
 	&__call {
 		grid-area: call;
+		margin-bottom: 35px;
 		a {
 			color: $accent;
+			&:hover {
+				color: $primaryColor;
+			}
 		}
 	}
 	&__menu {
@@ -51,13 +56,14 @@ $pfx: "header";
 		justify-content: end;
 		align-items: center;
 		grid-area: menu;
+		margin-bottom: 35px;
 		a {
 			display: grid;
 			align-items: center;
 			grid-template-columns: auto minmax(28px, 19px);
 			color: $bodyColor;
 			font-weight: 400;
-			column-gap: $grid-gap-sm;
+			column-gap: .95rem;
 			&:hover {
 				.#{$pfx}__menu_hamburger {
 					span:nth-of-type(2) {

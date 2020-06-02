@@ -20,17 +20,18 @@
 }
 
 .checkbox__toggle {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   position: relative;
   margin-right: 10px;
   background-size: 0;
-  border: solid 1px $primaryColor;
-  background-image: url("../img/svg/checked.svg");
+  border: solid 1px $accent;
+  background-image: url("../img/checked.svg");
   transition: background-color 0.2s ease 0s;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 3px;
 }
 
 .error_field .checkbox__toggle {
@@ -59,9 +60,12 @@
 }
 
 .checkbox__text {
-  font-size: 13px;
+  font-size: 14px;
+  color: $gray;
   a {
     opacity: 0.8;
+    color: $gray;
+    text-decoration: underline;
     &:hover {
       text-decoration: underline;
       opacity: 1;

@@ -6,15 +6,38 @@ $pfx: "form-button";
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 5px;
-  font-weight: 700;
+  border-radius: 30px 0px 30px 0px;
+  font-weight: normal;
   transition: background-color 0.3s, color 0.3s, transform 0.3s,
   border-color 0.3s;
   color: $neutralColor;
   border: 0;
+  background: $gradientLinear;
+  position: relative;
+  transition: all .3s;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px 0px 30px 0px;
+    background: $gradientLinearHover;
+    opacity: 0;
+    transition: all .3s;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+      transition: all .3s;
+    }
+  }
   span {
-    font-weight: bold;
-    color: $neutralColor;
+    color: $white;
+    padding: 1.1em 3.7em;
+    position: relative;
+    z-index: 1;
   }
   svg {
     margin-left: 1rem;
@@ -59,20 +82,20 @@ $pfx: "form-button";
   /*
     * size btn
     */
-  &-sm {
-    height: 37px;
-    span {
-      font-size: 1rem;
+    &-sm {
+      height: 37px;
+      span {
+        font-size: 1rem;
+      }
     }
-  }
-  &-base {
-    height: 52px;
-    span {
-      font-size: 1rem;
+    &-base {
+      height: 52px;
+      span {
+        font-size: 1rem;
+      }
     }
-  }
 
-  &:disabled {
-    cursor: not-allowed;
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
-}

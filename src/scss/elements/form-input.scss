@@ -8,9 +8,9 @@ $pfx: "form-input";
     line-height: 20px;
     font-size: 1rem;
     color: $input-placeholder-color;
-  }
+}
 
-  input {
+input {
     border-color: $input-border-color;
     border-width: 1px;
     border-style: solid;
@@ -18,7 +18,6 @@ $pfx: "form-input";
     display: flex;
     align-items: center;
     background-color: $neutralColor;
-    border-radius: 3px;
     padding: 0 1.25rem;
     font-size: 1rem;
     line-height: 1;
@@ -29,6 +28,20 @@ $pfx: "form-input";
     border-radius: $input-border-radius;
     &::placeholder {
       color: $input-placeholder-color;
-    }
   }
+}
+
+&-secondary {
+    input {
+        background: none;
+        border-color: #328056;
+        color: $white;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: $input-border-radius;
+        height: 68px;
+        width: 100%;
+        padding: 0 1.25rem;
+    }
+}
 }

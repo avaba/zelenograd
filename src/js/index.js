@@ -12,5 +12,8 @@ import './includes/header';
 import './includes/footer';
 
 import "./modules/validate";
+import "./modules/common";
+
+require("slick-carousel");
 
 // import './blocks/page';

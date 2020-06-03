@@ -1,80 +1,86 @@
-.checkbox {
+$pfx: "checkbox";
+
+.#{$pfx} {
   display: flex;
   align-items: center;
   cursor: pointer;
   width: fit-content;
+  &__input {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    appearance: none;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    &:checked + .checkbox__toggle {
+      background-size: 70%;
+    }
+  }
+  &__toggle {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 10px;
+    background-size: 0;
+    border: solid 1px $accent;
+    background-image: url("../img/checked.svg");
+    transition: background-color 0.2s ease 0s;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    width: 100%;
+  }
+  &__text {
+    font-size: 14px;
+    color: $gray;
+    font-weight: normal;
+    a {
+      opacity: 0.8;
+      color: $gray;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+    }
+  }
+  &.#{$pfx}-white &{
+    &__text {
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }
 }
 
-.checkbox__input {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  appearance: none;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-.checkbox__input:checked + .checkbox__toggle {
-  background-size: 70%;
-}
-
-.checkbox__toggle {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-  position: relative;
-  margin-right: 10px;
-  background-size: 0;
-  border: solid 1px $accent;
-  background-image: url("../img/checked.svg");
-  transition: background-color 0.2s ease 0s;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 3px;
-}
-
-.error_field .checkbox__toggle {
+.error_field .#{$pfx}__toggle {
   background-color: #d6082e;
 }
 
 @media (max-width: 767px) {
-  .checkbox__toggle {
+  .#{$pfx}__toggle {
     width: 18px;
     height: 18px;
   }
 }
 
-.checkbox__content {
-  display: flex;
-  align-items: center;
-  font-weight: 300;
-  width: 100%;
-}
-
 @media (max-width: 767px) {
-  .checkbox__content {
+  .#{$pfx}__content {
     justify-content: center;
     text-align: left;
   }
 }
 
-.checkbox__text {
-  font-size: 14px;
-  color: $gray;
-  a {
-    opacity: 0.8;
-    color: $gray;
-    text-decoration: underline;
-    &:hover {
-      text-decoration: underline;
-      opacity: 1;
-    }
-  }
-}
-
 @media (max-width: 479px) {
-  .checkbox__text {
+  .#{$pfx}__text {
     font-size: 11px;
   }
 }

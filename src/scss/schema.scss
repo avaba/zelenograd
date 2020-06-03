@@ -12,7 +12,7 @@ $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
 $white: #fff;
-$gray: #797D76;
+$gray: #797d76;
 $gray-dark: #343a40;
 $gray-100: #ececec;
 $gray-200: #a6aab0;
@@ -21,32 +21,32 @@ $gray-600: #737373;
 /*
    * 2. Базовая настройка шаблона
    */
-$accent: #3DB548;   
+$accent: #3db548;
 $neutralColor: #fff;
-$primaryColor: #539B44;
-$primaryColor-2: #3C7A3B;
-$primaryColor-3: #0C6D38;
+$primaryColor: #539b44;
+$primaryColor-2: #3c7a3b;
+$primaryColor-3: #0c6d38;
 $primaryColor-4: #039649;
-$primaryColor-5: #04582D;
-$primaryColor-6: #92D505;
-$gradientLinear: linear-gradient(77.83deg, #35B34A 0%, #C2D222 100%);
-$gradientLinearHover: linear-gradient(77.83deg, #C2D222 0%, #35B34A 100%);
-$secondaryColor: #FFE454;
+$primaryColor-5: #04582d;
+$primaryColor-6: #92d505;
+$gradientLinear: linear-gradient(77.83deg, #35b34a 0%, #c2d222 100%);
+$gradientLinearHover: linear-gradient(77.83deg, #c2d222 0%, #35b34a 100%);
+$secondaryColor: #ffe454;
 $bodyColor: #313236;
 $bodyColorInverse: #313236; // Проставляется тексту например при наведении, когда фон заливается другим цветом
-$bodyBackground: #ffffff;
+$bodyBackground: #fff;
 $bodyBackground-invert: #1b1d1f;
-$plainBackground: #F9F9F9; // Заливка блоков
+$plainBackground: #f9f9f9; // Заливка блоков
 $plainBackgroundDarker: #d5e5ff;
-$disabled: #D9D9D9;
+$disabled: #d9d9d9;
 
 /*
    * 3. Шрифты
    *    изменяются только в режиме контруктора
    *    на сайте использовать sass переменные, так как responsive font size не работает с css variables
    */
-$fontSizeXS: 0.75rem; // 13.5px
-$fontSizeSM: 0.875rem; // 15px
+$fontSizeXS: .75rem; // 13.5px
+$fontSizeSM: .875rem; // 15px
 $fontSizeBASE: 1rem; // 18px
 $fontSizeMD: 1.125rem; // 20px
 $fontSizeLG: 1.25rem; // 22px
@@ -58,10 +58,10 @@ $fontSize3XL: 3.4rem; // 61px
 /*
    * 4. Текст
    */
-$textOpacity: 0.6; // для светлого варианта текста
+$textOpacity: .6; // для светлого варианта текста
 $lineHeight: 1.5; // Базовый
 $lineHeightHeading: 1; // Для заголовков
-$textMuted-40: rgba(0, 0, 0, 0.3);
+$textMuted-40: rgba(0, 0, 0, .3);
 $textMuted-60: #838f9d;
 $textMuted: $textMuted-60;
 
@@ -73,7 +73,7 @@ $page-margin-y: 4rem;
 $container-spacer-x: 1rem;
 $grid-gap: 1.1rem;
 $grid-gap-big: 2.7rem;
-$grid-gap-sm: 0.8rem;
+$grid-gap-sm: .8rem;
 
 /*
    * 6. Границы и скругления
@@ -81,7 +81,7 @@ $grid-gap-sm: 0.8rem;
 $border-width: 1px;
 $border-radius: 8px;
 $border-color-dark: var(--text-muted-60);
-$border-color-light: rgba(0, 0, 0, 0.2);
+$border-color-light: rgba(0, 0, 0, .2);
 $border-color: var(--border-color-light);
 
 /*
@@ -92,13 +92,13 @@ $border-color: var(--border-color-light);
 $card-spacer-y: 1.5rem;
 $card-spacer-x: 1.2rem;
 $card-bg: $bodyBackground; // Фон карточки
-$card-border-radius: 0px;
+$card-border-radius: 0;
 
 // 7.3 Input
 $input-bg: #fff;
 $input-color: #313236;
-$input-border-color: #C6C6C6;
-$input-placeholder-color: #A3A3A3;
+$input-border-color: #c6c6c6;
+$input-placeholder-color: #a3a3a3;
 $input-border-radius: 100px;
 // $input-border-color: var(--border-color);
 // $input-border-width: var(--border-width);

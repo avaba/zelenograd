@@ -19,30 +19,246 @@
           </div>
           <div class="header__right">
             <div class="header__phone">
-              <img src="img/phone.svg" alt="" /> <a href="tel:88005553535">8 800 555 35 35</a>
+              <img src="img/phone.svg" alt="" /> <a href="tel:88005553535">8 800 000 00 00</a>
             </div>
             <div class="header__call">
               <a href="#">Заказать звонок</a>
             </div>
             <div class="header__menu">
-              <a href="#">Меню</a>
+              <a href="#">
+                <span>Меню</span>
+                <span class="header__menu_hamburger f-column h-between d-flex">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <main>
-      <section>
-        homesssss
+    <main class="main">
+      <section class="home-block">
+        <div class="container">
+          <div class="home-block__wrap">
+            <div class="home-block__wrap-col">
+              <div class="home-offer">
+                <h1 class="home-offer__title">
+                  Квартиры<br />
+                  в Краснодаре<br />
+                  от 1 млн руб.
+                </h1>
+                <span class="home-offer__start">Старт продаж!</span>
+
+                <form class="home-offer__form">
+                  <div class="home-offer__form-col form-input">
+                    <input
+                      type="tel"
+                      class="js-phone required"
+                      autocomplete="off"
+                      name="ORDER[PHONE]"
+                      placeholder="+7 (___) ___-__-__"
+                    />
+                  </div>
+                  <div class="home-offer__form-col">
+                    <button class="form-button-primary"><span>Узнать больше</span></button>
+                  </div>
+                  <div class="home-offer__form-col form-checkbox">
+                    <label class="checkbox">
+                      <input class="checkbox__input required" name="privacy" type="checkbox" checked="" />
+                      <div class="checkbox__toggle"></div>
+                      <div class="checkbox__text">Я согласен на <a href="#">обработку персональных данных</a></div>
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="home-block__wrap-col">
+              <div class="home-block__img">
+                <img class="home-block__img-top" src="img/home-block-top.svg" alt="" />
+                <img src="img/bg-home.png" alt="" />
+                <img class="home-block__img-bot" src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__wrap">
+            <div class="about__left">
+              <h2 class="about__wrap-title">Дом в тихом районе</h2>
+              <p class="about__wrap-desc">
+                ЖК «Зеленодар» — монолитно-кирпичный дом на улице 3-я Трудовая, в северной части Краснодара. Уютный
+                район удалён от городского шума. Здесь много частных и малоэтажных домов. Тихое местечко для размеренной
+                жизни.
+              </p>
+              <a class="link" href="#"><img src="img/download.svg" alt="" />Скачать документы</a>
+            </div>
+            <div class="about__right h-end">
+              <div class="about__right_item d-flex f-column">
+                <span class="about__right_item-title">1 литер</span>
+                <span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
+              </div>
+              <div class="about__right_item d-flex f-column">
+                <span class="about__right_item-title">2 литер</span>
+                <span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
+              </div>
+              <div class="about__right_item d-flex f-column">
+                <span class="about__right_item-title">3 литер</span>
+                <span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
+              </div>
+              <div class="about__right_item d-flex f-column">
+                <span class="about__right_item-title">214-ФЗ</span>
+                <span class="about__right_item-text">строительство по закону</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="container">
+          <h3 class="presentation__title">Получите презентацию о ЖК</h3>
+          <div class="presentation__form">
+            <div class="presentation__form-col form-input">
+              <input
+                type="email"
+                class="js-email required"
+                autocomplete="off"
+                name="ORDER[EMAIL]"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="presentation__form-col">
+              <button class="form-button-primary"><span>Получить презентацию</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stock">
+        <div class="container">
+          <div class="stock-slider">
+            <div>
+              <div class="stock-slider__slide">
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <img class="stock-slider__slide-img" src="img/stock.png" alt="" />
+                </div>
+
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <h2 class="stock-slider__slide-title">Длинное название акции</h2>
+                  <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности.</p>
+                </div>
+
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <form class="stock-slider__form">
+                    <div class="stock-slider__form-col form-input-secondary">
+                      <input
+                        type="tel"
+                        class="js-phone required"
+                        autocomplete="off"
+                        name="ORDER[PHONE]"
+                        placeholder="+7 (___) ___-__-__"
+                      />
+                    </div>
+                    <div class="stock-slider__form-col">
+                      <button class="form-button-primary d-block w-100"><span>Перезвоните мне</span></button>
+                    </div>
+                    <div class="stock-slider__form-col form-checkbox">
+                      <label class="checkbox checkbox-white">
+                        <input class="checkbox__input required" name="privacy" type="checkbox" checked="" />
+                        <div class="checkbox__toggle"></div>
+                        <div class="checkbox__text">Я согласен на <a href="#">обработку персональных данных</a></div>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="stock-slider__slide">
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <img class="stock-slider__slide-img" src="img/stock.png" alt="" />
+                </div>
+
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <h2 class="stock-slider__slide-title">Длинное название акции</h2>
+                  <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности.</p>
+                </div>
+
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <form class="stock-slider__form">
+                    <div class="stock-slider__form-col form-input-secondary">
+                      <input
+                        type="tel"
+                        class="js-phone required"
+                        autocomplete="off"
+                        name="ORDER[PHONE]"
+                        placeholder="+7 (___) ___-__-__"
+                      />
+                    </div>
+                    <div class="stock-slider__form-col">
+                      <button class="form-button-primary d-block w-100"><span>Перезвоните мне</span></button>
+                    </div>
+                    <div class="stock-slider__form-col form-checkbox">
+                      <label class="checkbox checkbox-white">
+                        <input class="checkbox__input required" name="privacy" type="checkbox" checked="" />
+                        <div class="checkbox__toggle"></div>
+                        <div class="checkbox__text">Я согласен на <a href="#">обработку персональных данных</a></div>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="stock-slider__slide">
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <img class="stock-slider__slide-img" src="img/stock.png" alt="" />
+                </div>
+
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <h2 class="stock-slider__slide-title">Длинное название акции</h2>
+                  <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности.</p>
+                </div>
+
+                <div class="stock-slider__slide-col d-flex f-column h-center">
+                  <form class="stock-slider__form">
+                    <div class="stock-slider__form-col form-input-secondary">
+                      <input
+                        type="tel"
+                        class="js-phone required"
+                        autocomplete="off"
+                        name="ORDER[PHONE]"
+                        placeholder="+7 (___) ___-__-__"
+                      />
+                    </div>
+                    <div class="stock-slider__form-col">
+                      <button class="form-button-primary d-block w-100"><span>Перезвоните мне</span></button>
+                    </div>
+                    <div class="stock-slider__form-col form-checkbox">
+                      <label class="checkbox checkbox-white">
+                        <input class="checkbox__input required" name="privacy" type="checkbox" checked="" />
+                        <div class="checkbox__toggle"></div>
+                        <div class="checkbox__text">Я согласен на <a href="#">обработку персональных данных</a></div>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- modals -->
 
-    <footer>
-      footer
-    </footer>
+    <footer></footer>
 
     <script src="js/bundle.js"></script>
   </body>

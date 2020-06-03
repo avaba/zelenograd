@@ -28,6 +28,7 @@ $pfx: "about";
     border-left: 2px solid $accent;
     flex-direction: column;
     padding-left: 30px;
+    height: 100%;
     &-title {
       font-size: $fontSizeLG;
       line-height: $fontSizeBASE;

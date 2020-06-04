@@ -1,0 +1,15 @@
+$pfx: "video";
+
+.#{$pfx} {
+  &__head {
+    display: grid;
+    grid-template-columns: 42% 1fr;
+    align-items: center;  
+    margin-bottom: 60px;
+  }
+  &__wrap {
+    overflow: hidden;
+    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 200px 0 200px;
+  }
+}

@@ -77,6 +77,79 @@ section {
   color: $accent;
   display: inline-flex;
   align-items: center;
+  &:hover {
+    color: $primaryColor-3;
+    svg, path {
+      fill: $primaryColor-3;
+    }
+  }
+}
+
+.arrow-right {
+  .slick-prev {
+    top: 0;
+    right: 80px;
+    left: auto;
+    transform: translate(0, 0);
+  }
+  .slick-next {
+    top: 0;
+    right: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.count {
+  &__wrap {
+    position: absolute;
+    font-weight: 400;
+    color: $gray;
+    right: 175px;
+    top: 20px;
+    font-size: 14px;
+  }
+}
+
+.play {
+  display: block;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 123px;
+    height: 123px;
+    background: $white;
+    box-shadow: 0px 10px 50px rgba(40, 36, 36, 0.1);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-out;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 35px;
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-out;
+  }
+  &:hover {
+    &:before {
+      width: 140px;
+      height: 140px;
+    }
+    &:after {
+      width: 34px;
+      height: 39px;
+    }
+  }
 }
 
 // mixins for fix styles fancybox

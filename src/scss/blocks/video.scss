@@ -1,6 +1,7 @@
 $pfx: "video";
 
 .#{$pfx} {
+  margin-bottom: 140px;
   &__head {
     display: grid;
     grid-template-columns: 42% 1fr;

@@ -47,11 +47,13 @@ $pfx: "form-button";
       }
     }
     span {
-      padding: 1.1em 3.7em;
+      padding: 1.1em 2.6em;
       position: relative;
       z-index: 1;
-      display: inline-block;
+      display: block;
       color: $white;
+      text-align: center;
+      width: 100%;
     }
   }
   &-secondary {

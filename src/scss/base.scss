@@ -16,7 +16,7 @@ body {
   font-family: 'Gotham Pro';
   overflow-x: hidden; // fix: Некоторые блоки могут выходить за пределы по горизонтале
   color: $bodyColor;
-  font-weight: 500;
+  font-weight: 400;
   line-height: $lineHeight;
 }
 
@@ -32,6 +32,10 @@ p {
   font-size: 1rem;
   line-height: 1.75;
   font-weight: normal;
+}
+
+h2, h3 {
+  font-weight: 500;
 }
 
 .container {
@@ -85,20 +89,6 @@ section {
   }
 }
 
-.arrow-right {
-  .slick-prev {
-    top: 0;
-    right: 80px;
-    left: auto;
-    transform: translate(0, 0);
-  }
-  .slick-next {
-    top: 0;
-    right: 0;
-    transform: translate(0, 0);
-  }
-}
-
 .count {
   &__wrap {
     position: absolute;
@@ -148,6 +138,25 @@ section {
     &:after {
       width: 34px;
       height: 39px;
+    }
+  }
+}
+
+.list {
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 19px;
+      height: 13px;
+      background: url(../img/list.svg) no-repeat;
+      background-size: cover;
+      background-position: 50%;
     }
   }
 }

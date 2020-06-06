@@ -10,9 +10,11 @@ import 'core-js/features/global-this';
 
 import './includes/header';
 import './includes/footer';
+import './includes/count';
+import './includes/stock';
+import './includes/tabs';
 
 import "./modules/validate";
-import "./modules/common";
 
 require("slick-carousel");
 

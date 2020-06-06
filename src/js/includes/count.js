@@ -1,15 +1,5 @@
 $(function(){
 
-// Слайдер акций
-
-$('.stock-slider').slick({
-  dots: false,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
-
 // Слайдер Особенности ЖК
 
 $('.features-slider').slick({
@@ -53,5 +43,4 @@ count.on('afterChange', function(event, slick, currentSlide, nextSlide){
     $(this).text(currentSl);
   }).animate({'opacity': 1}, 150);
 });
-
 });

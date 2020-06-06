@@ -1,0 +1,10 @@
+$pfx: "layouts";
+
+.#{$pfx} { 
+  margin-bottom: 145px;
+  &__head {
+    display: grid;
+    grid-template-columns: 34% 1fr;
+  }
+}
+

@@ -25,6 +25,12 @@ $pfx: "home-block";
 			left: -140px;
 			z-index: -1;
 		}
+		&-bot {
+			position: absolute;
+			bottom: -32px;
+			right: -77px;
+			z-index: 1;
+		}
 	}
 }
 

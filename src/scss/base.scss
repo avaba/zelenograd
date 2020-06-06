@@ -34,6 +34,10 @@ p {
   font-weight: normal;
 }
 
+h2, h3 {
+  font-weight: 500;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1529px;
@@ -82,20 +86,6 @@ section {
     svg, path {
       fill: $primaryColor-3;
     }
-  }
-}
-
-.arrow-right {
-  .slick-prev {
-    top: 0;
-    right: 80px;
-    left: auto;
-    transform: translate(0, 0);
-  }
-  .slick-next {
-    top: 0;
-    right: 0;
-    transform: translate(0, 0);
   }
 }
 
@@ -148,6 +138,25 @@ section {
     &:after {
       width: 34px;
       height: 39px;
+    }
+  }
+}
+
+.list {
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 19px;
+      height: 13px;
+      background: url(../img/list.svg) no-repeat;
+      background-size: cover;
+      background-position: 50%;
     }
   }
 }

@@ -1,178 +1,392 @@
-<% var data = { title: "Главная", author: "sm" }; %> 
-<%= _.template(require('./../includes/header.html').default)(data) %>
+<% var data = { title: "Главная", author: "sm" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
 
 <main class="main">
+  <section class="home-block">
+    <div class="container">
+      <div class="home-block__wrap">
+        <div class="home-block__wrap-col">
+          <div class="home-offer">
+            <h1 class="home-offer__title">
+              Квартиры<br />
+              в Краснодаре<br />
+              от 1 млн руб.
+            </h1>
+            <span class="home-offer__start">Старт продаж!</span>
 
-	<section class="home-block">
-		<div class="container">
-			<div class="home-block__wrap">
-				<div class="home-block__wrap-col">
-					<div class="home-offer">
-						<h1 class="home-offer__title">Квартиры<br> в Краснодаре<br> от 1 млн руб.</h1>
-						<span class="home-offer__start">Старт продаж!</span>
+            <form class="home-offer__form">
+              <div class="home-offer__form-col form-input">
+                <input
+                  type="tel"
+                  class="js-phone required"
+                  autocomplete="off"
+                  name="ORDER[PHONE]"
+                  placeholder="+7 (___) ___-__-__"
+                />
+              </div>
+              <div class="home-offer__form-col">
+                <button class="form-button-primary">
+                  <span>Узнать больше</span>
+                </button>
+              </div>
+              <div class="home-offer__form-col form-checkbox">
+                <label class="checkbox">
+                  <input
+                    class="checkbox__input required"
+                    name="privacy"
+                    type="checkbox"
+                    checked=""
+                  />
+                  <div class="checkbox__toggle"></div>
+                  <div class="checkbox__text">
+                    Я согласен на <a href="#">обработку персональных данных</a>
+                  </div>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="home-block__wrap-col">
+          <div class="home-block__img">
+            <img
+              class="home-block__img-top"
+              src="./img/home-block-top.svg"
+              alt=""
+            />
+            <img src="img/bg-home.png" alt="" />
+            <img
+              class="home-block__img-bot"
+              src="./img/home-block-bot.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<form class="home-offer__form">
-							<div class="home-offer__form-col form-input">
-								<input type="tel" class="js-phone required" autocomplete="off" name="ORDER[PHONE]" placeholder="+7 (___) ___-__-__">
-							</div>
-							<div class="home-offer__form-col">
-								<button class="form-button-primary"><span>Узнать больше</span></button>
-							</div>
-							<div class="home-offer__form-col form-checkbox">
-								<label class="checkbox">
-									<input class="checkbox__input required" name="privacy" type="checkbox" checked="">
-									<div class="checkbox__toggle"></div>
-									<div class="checkbox__text">Я согласен на <a href="#">обработку персональных данных</a></div>
-								</label>
-							</div>
-						</form>
+  <section class="about">
+    <div class="container">
+      <div class="about__wrap">
+        <div class="about__left">
+          <h2 class="about__wrap-title">Дом в тихом районе</h2>
+          <p class="about__wrap-desc">
+            ЖК «Зеленодар» — монолитно-кирпичный дом на улице 3-я Трудовая, в
+            северной части Краснодара. Уютный район удалён от городского шума.
+            Здесь много частных и малоэтажных домов. Тихое местечко для
+            размеренной жизни.
+          </p>
+          <a class="link" href="#"
+            ><svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.8646 15.9131L11.9353 15.8424L11.8646 15.9131L16.3333 20.3817C16.3333 20.3817 16.3333 20.3817 16.3333 20.3817C16.5101 20.5586 16.7499 20.6579 17 20.6579C17.25 20.6579 17.4899 20.5585 17.6667 20.3817L22.1353 15.913L22.1353 15.913C22.5034 15.5448 22.5034 14.9478 22.1352 14.5796C21.767 14.2115 21.17 14.2114 20.8018 14.5796L20.8725 14.6503L20.8018 14.5796L17.9429 17.4387L17.9428 8.68904C17.9428 8.16833 17.5207 7.74619 17 7.74619C16.4793 7.74619 16.0571 8.16833 16.0571 8.68904L16.0572 17.4388L13.198 14.5797C12.8299 14.2115 12.2328 14.2115 11.8646 14.5797C11.4964 14.948 11.4964 15.5449 11.8646 15.9131Z"
+                fill="#3DB548"
+                stroke="#3DB548"
+                stroke-width="0.2"
+              />
+              <path
+                d="M25.1252 22.8745H8.87508C8.35437 22.8745 7.93223 23.2966 7.93223 23.8173C7.93223 24.338 8.35437 24.7602 8.87508 24.7602H25.1252C25.6459 24.7602 26.068 24.338 26.068 23.8173C26.068 23.2966 25.6459 22.8745 25.1252 22.8745Z"
+                fill="#3DB548"
+                stroke="#3DB548"
+                stroke-width="0.2"
+              /></svg
+            >Скачать документы</a
+          >
+        </div>
+        <div class="about__right h-end">
+          <div class="about__right_item d-flex f-column">
+            <span class="about__right_item-title">1 литер</span>
+            <span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
+          </div>
+          <div class="about__right_item d-flex f-column">
+            <span class="about__right_item-title">2 литер</span>
+            <span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
+          </div>
+          <div class="about__right_item d-flex f-column">
+            <span class="about__right_item-title">3 литер</span>
+            <span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
+          </div>
+          <div class="about__right_item d-flex f-column">
+            <span class="about__right_item-title">214-ФЗ</span>
+            <span class="about__right_item-text">строительство по закону</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					</div>
-				</div>
-				<div class="home-block__wrap-col">
-					<div class="home-block__img">
-						<img class="home-block__img-top" src="./img/home-block-top.svg" alt="">
-						<img src="img/bg-home.png" alt="">
-						<img class="home-block__img-bot" src="./img/home-block-bot.svg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="presentation">
+    <div class="container">
+      <h3 class="presentation__title">Получите презентацию о ЖК</h3>
+      <div class="presentation__form">
+        <div class="presentation__form-col form-input">
+          <input
+            type="email"
+            class="js-email required"
+            autocomplete="off"
+            name="ORDER[EMAIL]"
+            placeholder="E-mail"
+          />
+        </div>
+        <div class="presentation__form-col">
+          <button class="form-button-primary">
+            <span>Получить презентацию</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section class="about">
-		<div class="container">
-			<div class="about__wrap">
-				<div class="about__left">
-					<h2 class="about__wrap-title">Дом в тихом районе</h2>
-					<p class="about__wrap-desc">ЖК «Зеленодар» — монолитно-кирпичный дом на улице 3-я Трудовая, в северной части Краснодара. Уютный район удалён от городского шума. Здесь много частных и малоэтажных домов. Тихое местечко для размеренной жизни.</p>
-					<a class="link" href="#"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M11.8646 15.9131L11.9353 15.8424L11.8646 15.9131L16.3333 20.3817C16.3333 20.3817 16.3333 20.3817 16.3333 20.3817C16.5101 20.5586 16.7499 20.6579 17 20.6579C17.25 20.6579 17.4899 20.5585 17.6667 20.3817L22.1353 15.913L22.1353 15.913C22.5034 15.5448 22.5034 14.9478 22.1352 14.5796C21.767 14.2115 21.17 14.2114 20.8018 14.5796L20.8725 14.6503L20.8018 14.5796L17.9429 17.4387L17.9428 8.68904C17.9428 8.16833 17.5207 7.74619 17 7.74619C16.4793 7.74619 16.0571 8.16833 16.0571 8.68904L16.0572 17.4388L13.198 14.5797C12.8299 14.2115 12.2328 14.2115 11.8646 14.5797C11.4964 14.948 11.4964 15.5449 11.8646 15.9131Z" fill="#3DB548" stroke="#3DB548" stroke-width="0.2"/>
-						<path d="M25.1252 22.8745H8.87508C8.35437 22.8745 7.93223 23.2966 7.93223 23.8173C7.93223 24.338 8.35437 24.7602 8.87508 24.7602H25.1252C25.6459 24.7602 26.068 24.338 26.068 23.8173C26.068 23.2966 25.6459 22.8745 25.1252 22.8745Z" fill="#3DB548" stroke="#3DB548" stroke-width="0.2"/>
-					</svg>Скачать документы</a>
-				</div>
-				<div class="about__right h-end">
-					<div class="about__right_item d-flex f-column">
-						<span class="about__right_item-title">1 литер</span>
-						<span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
-					</div>
-					<div class="about__right_item d-flex f-column">
-						<span class="about__right_item-title">2 литер</span>
-						<span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
-					</div>
-					<div class="about__right_item d-flex f-column">
-						<span class="about__right_item-title">3 литер</span>
-						<span class="about__right_item-text">сдача в 4 кв. 2021 года</span>
-					</div>
-					<div class="about__right_item d-flex f-column">
-						<span class="about__right_item-title">214-ФЗ</span>
-						<span class="about__right_item-text">строительство по закону</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="stock">
+    <div class="container">
+      <div class="stock-slider">
+        <%=
+        _.template(require('./../includes/blocks/stockSlide.html').default)() %>
+        <%=
+        _.template(require('./../includes/blocks/stockSlide.html').default)() %>
+        <%=
+        _.template(require('./../includes/blocks/stockSlide.html').default)() %>
+      </div>
+    </div>
+  </section>
 
-	<section class="presentation">
-		<div class="container">
-			<h3 class="presentation__title">Получите презентацию о ЖК</h3>
-			<div class="presentation__form">
-				<div class="presentation__form-col form-input">
-					<input type="email" class="js-email required" autocomplete="off" name="ORDER[EMAIL]" placeholder="E-mail">
-				</div>
-				<div class="presentation__form-col">
-					<button class="form-button-primary"><span>Получить презентацию</span></button>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="features">
+    <div class="container">
+      <h2>Особенности ЖК</h2>
+      <div class="features-slider count arrow-right">
+        <div>
+          <div class="features-slider__top">
+            <div class="features-slider__top-wrap">
+              <span class="features-slider__top-current"></span>
+              <h3 class="features-slider__top-title">Про двор</h3>
+              <p>
+                Равным образом постоянное информационно-пропагандистское
+                обеспечение нашей деятельности позволяет выполнять важные
+                задания по разработке позиций, занимаемых участниками.
+              </p>
+            </div>
+          </div>
+          <div class="features-slider__bot">
+            <img src="./img/photo1.jpg" alt="" />
+            <img src="./img/photo2.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="features-slider__top">
+            <div class="features-slider__top-wrap">
+              <span class="features-slider__top-current"></span>
+              <h3 class="features-slider__top-title">Про двор</h3>
+              <p>
+                Равным образом постоянное информационно-пропагандистское
+                обеспечение нашей деятельности позволяет выполнять важные
+                задания по разработке позиций, занимаемых участниками.
+              </p>
+            </div>
+          </div>
+          <div class="features-slider__bot">
+            <img src="./img/photo1.jpg" alt="" />
+            <img src="./img/photo2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section class="stock">
-		<div class="container">
-			<div class="stock-slider">
-				<%= _.template(require('./../includes/blocks/stockSlide.html').default)() %>
-				<%= _.template(require('./../includes/blocks/stockSlide.html').default)() %>
-				<%= _.template(require('./../includes/blocks/stockSlide.html').default)() %>
-			</div>
-		</div>
-	</section>
+  <section class="video">
+    <div class="container">
+      <div class="video__head">
+        <h2 class="video__head-title">Видео по микрорайону</h2>
+        <p class="video__head-desc">Краткое описание</p>
+      </div>
+      <div class="video__wrap">
+        <a href="#" class="play">
+          <img src="./img/video.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
 
-	<section class="features">
-		<div class="container">
-			<h2>Особенности ЖК</h2>
-			<div class="features-slider count arrow-right">
-				<div>
-					<div class="features-slider__top">
-						<div class="features-slider__top-wrap">
-							<span class="features-slider__top-current"></span>
-							<h3 class="features-slider__top-title">Про двор</h3>
-							<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками.</p>
-						</div>
-					</div>
-					<div class="features-slider__bot">
-						<img src="./img/photo1.jpg" alt="">
-						<img src="./img/photo2.jpg" alt="">
-					</div>
-				</div>
-				<div>
-					<div class="features-slider__top">
-						<div class="features-slider__top-wrap">
-							<span class="features-slider__top-current"></span>
-							<h3 class="features-slider__top-title">Про двор</h3>
-							<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками.</p>
-						</div>
-					</div>
-					<div class="features-slider__bot">
-						<img src="./img/photo1.jpg" alt="">
-						<img src="./img/photo2.jpg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="repair">
+    <div class="container">
+      <div class="repair__head">
+        <div class="repair__head-title">
+          <h2>
+            Квартира<br />
+            с готовым ремонтом
+          </h2>
+        </div>
+        <div class="repair__head-desc">
+          <p>
+            Закажите ремонт от застройщика, и останется перевезти только мебель
+            и вещи. Мы делаем ремонт в больших объемах, поэтому предлагаем
+            демократичные цены.
+          </p>
+        </div>
+      </div>
 
-	<section class="video">
-		<div class="container">
-			<div class="video__head">
-				<h2 class="video__head-title">Видео по микрорайону</h2>
-				<p class="video__head-desc">Краткое описание</p>
-			</div>
-			<div class="video__wrap">
-				<a href="#" class="play">
-					<img src="./img/video.jpg" alt="">
-				</a>
-			</div>
-		</div>
-	</section>
+      <div class="repair__wrap">
+        <div class="repair__wrap-col">
+          <div class="repair__slide slide-white-btn">
+            <div><img src="./img/repair.jpg" alt="" /></div>
+            <div><img src="./img/repair.jpg" alt="" /></div>
+            <div><img src="./img/repair.jpg" alt="" /></div>
+            <div><img src="./img/repair.jpg" alt="" /></div>
+          </div>
+        </div>
 
-	<section class="layouts">
-		<div class="container">
-			<div class="layouts__head">
-				<div class="layouts__head-title">
-					<h2>Планировки</h2>
-				</div>
-				<div class="layouts__head-tabs">
-					<div class="tabs">
-						<div class="tabs__wrap">
-							<div class="tabs__item tabs__item--active">Студии</div>
-							<div class="tabs__item">1-комнатные</div>
-							<div class="tabs__item">2-комнатные</div>
-							<div class="tabs__item">3-комнатные</div>
-							<div class="tabs__line tabs__line--1"></div>
-						</div>
-					</div>
-				</div>
-				<div class="tabs-content">
-					<div class="tabs-content__item tabs-content__item--active">1</div>
-					<div class="tabs-content__item">2</div>
-					<div class="tabs-content__item">3</div>
-					<div class="tabs-content__item">4</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="repair__wrap-col">
+          <div class="repair__content">
+            <h3 class="repair__content-title">Что входит в ремонт</h3>
+            <div class="repair__list">
+              <div class="repair__list-col">
+                <ul class="list">
+                  <li>Обои под покраску</li>
+                  <li>Натяжной потолок</li>
+                  <li>Ламинат и плинтуса</li>
+                  <li>Межкомнатные двери</li>
+                </ul>
+              </div>
+              <div class="repair__list-col">
+                <ul class="list">
+                  <li>Розетки и выключатели</li>
+                  <li>Люстры и лампы</li>
+                  <li>Плитка и сантехника в ванной</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
+          <div class="repair__form">
+            <form class="home-offer__form">
+              <div class="home-offer__form-col form-input">
+                <input
+                  type="tel"
+                  class="js-phone required"
+                  autocomplete="off"
+                  name="ORDER[PHONE]"
+                  placeholder="+7 (___) ___-__-__"
+                />
+              </div>
+              <div class="home-offer__form-col">
+                <button class="form-button-primary">
+                  <span>Узнать о ремонте</span>
+                </button>
+              </div>
+              <div class="home-offer__form-col form-checkbox">
+                <label class="checkbox">
+                  <input
+                    class="checkbox__input required"
+                    name="privacy"
+                    type="checkbox"
+                    checked=""
+                  />
+                  <div class="checkbox__toggle"></div>
+                  <div class="checkbox__text">
+                    Я согласен на <a href="#">обработку персональных данных</a>
+                  </div>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="infrastructure">
+    <div class="container">
+      <div class="infrastructure__head">
+        <h2 class="infrastructure__head-title">Инфраструктура</h2>
+        <p class="infrastructure__head-desc">
+          Всё необходимое в пешей доступности
+        </p>
+      </div>
+
+      <div class="infrastructure-slider count arrow-right">
+        <div>
+          <img
+            class="infrastructure-slider__img"
+            src="./img/infro1.jpg"
+            alt=""
+          />
+          <div class="infrastructure-slider__content">
+            <h3 class="infrastructure-slider__content-title">
+              Ясли-сад «Солнышко»
+            </h3>
+            <div class="infrastructure-slider__content-desc">
+              <p>17 минут пешком</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="infrastructure-slider__img"
+            src="./img/infro1.jpg"
+            alt=""
+          />
+          <div class="infrastructure-slider__content">
+            <h3 class="infrastructure-slider__content-title">Школа №65</h3>
+            <div class="infrastructure-slider__content-desc">
+              <p>9 минут пешком</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="infrastructure-slider__img"
+            src="./img/infro1.jpg"
+            alt=""
+          />
+          <div class="infrastructure-slider__content">
+            <h3 class="infrastructure-slider__content-title">
+              Городская<br />
+              поликлиника №8
+            </h3>
+            <div class="infrastructure-slider__content-desc">
+              <p>27 минут пешком</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="infrastructure-slider__img"
+            src="./img/infro1.jpg"
+            alt=""
+          />
+          <div class="infrastructure-slider__content">
+            <h3 class="infrastructure-slider__content-title">
+              Детская поликлиника №8
+            </h3>
+            <div class="infrastructure-slider__content-desc">
+              <p>20 минут пешком</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="infrastructure-slider__img"
+            src="./img/infro1.jpg"
+            alt=""
+          />
+          <div class="infrastructure-slider__content">
+            <h3 class="infrastructure-slider__content-title">
+              Ясли-сад «Солнышко»
+            </h3>
+            <div class="infrastructure-slider__content-desc">
+              <p>17 минут пешком</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
-<%= _.template(require('./../includes/modals.html').default)() %> 
-<%= _.template(require('./../includes/footer.html').default)(data) %>
+<%= _.template(require('./../includes/modals.html').default)() %> <%=
+_.template(require('./../includes/footer.html').default)(data) %>

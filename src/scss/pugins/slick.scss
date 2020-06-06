@@ -72,3 +72,39 @@
 		border-radius: 60% 0 60%;
 	}
 }
+
+.arrow-right {
+	.slick-prev {
+		top: 0;
+		right: 80px;
+		left: auto;
+		transform: translate(0, 0);
+	}
+	.slick-next {
+		top: 0;
+		right: 0;
+		transform: translate(0, 0);
+	}
+}
+
+.slide-white-btn {
+	.slick-arrow {
+		&:after {
+			background: url(../img/arrow-black.svg);
+		}
+	}
+	.slick-prev, .slick-next {
+		background: $white;
+		&:hover {
+			&:after {
+				background: url(../img/arrow.svg);
+			}
+		}
+	}
+	.slick-prev {
+		left: 30px;
+	}
+	.slick-next {
+		right: 30px;
+	}
+}

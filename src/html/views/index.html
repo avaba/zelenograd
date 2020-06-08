@@ -581,7 +581,7 @@ _.template(require('./../includes/header.html').default)(data) %>
       </div>
     </div>
     <div class="tabs-content">
-      <div class="tabs-content__item" data-id="pay-1">
+      <div class="tabs-content__item tabs-content__item--active" data-id="pay-1">
         <div class="pay-offer">
           <div class="pay-offer__img">
             <img src="./img/offer1.jpg" alt="">
@@ -624,7 +624,7 @@ _.template(require('./../includes/header.html').default)(data) %>
           </div>
         </div>
       </div>
-      <div class="tabs-content__item tabs-content__item--active" data-id="pay-2">
+      <div class="tabs-content__item" data-id="pay-2">
         <div class="container">
           <div class="pay-mortgage">
             <div class="pay-mortgage__col">
@@ -1024,15 +1024,28 @@ _.template(require('./../includes/header.html').default)(data) %>
             </div>
           </div>
 
-          <a class="link" href="#"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.8646 15.9131L11.9353 15.8424L11.8646 15.9131L16.3333 20.3817C16.3333 20.3817 16.3333 20.3817 16.3333 20.3817C16.5101 20.5586 16.7499 20.6579 17 20.6579C17.25 20.6579 17.4899 20.5585 17.6667 20.3817L22.1353 15.913L22.1353 15.913C22.5034 15.5448 22.5034 14.9478 22.1352 14.5796C21.767 14.2115 21.17 14.2114 20.8018 14.5796L20.8725 14.6503L20.8018 14.5796L17.9429 17.4387L17.9428 8.68904C17.9428 8.16833 17.5207 7.74619 17 7.74619C16.4793 7.74619 16.0571 8.16833 16.0571 8.68904L16.0572 17.4388L13.198 14.5797C12.8299 14.2115 12.2328 14.2115 11.8646 14.5797C11.4964 14.948 11.4964 15.5449 11.8646 15.9131Z" fill="#3DB548" stroke="#3DB548" stroke-width="0.2"></path>
-            <path d="M25.1252 22.8745H8.87508C8.35437 22.8745 7.93223 23.2966 7.93223 23.8173C7.93223 24.338 8.35437 24.7602 8.87508 24.7602H25.1252C25.6459 24.7602 26.068 24.338 26.068 23.8173C26.068 23.2966 25.6459 22.8745 25.1252 22.8745Z" fill="#3DB548" stroke="#3DB548" stroke-width="0.2"></path></svg>Скачать документы</a>
-            
-          </div>
+          <a class="link" href="#">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.8646 15.9131L11.9353 15.8424L11.8646 15.9131L16.3333 20.3817C16.3333 20.3817 16.3333 20.3817 16.3333 20.3817C16.5101 20.5586 16.7499 20.6579 17 20.6579C17.25 20.6579 17.4899 20.5585 17.6667 20.3817L22.1353 15.913L22.1353 15.913C22.5034 15.5448 22.5034 14.9478 22.1352 14.5796C21.767 14.2115 21.17 14.2114 20.8018 14.5796L20.8725 14.6503L20.8018 14.5796L17.9429 17.4387L17.9428 8.68904C17.9428 8.16833 17.5207 7.74619 17 7.74619C16.4793 7.74619 16.0571 8.16833 16.0571 8.68904L16.0572 17.4388L13.198 14.5797C12.8299 14.2115 12.2328 14.2115 11.8646 14.5797C11.4964 14.948 11.4964 15.5449 11.8646 15.9131Z" fill="#3DB548" stroke="#3DB548" stroke-width="0.2">
+              </path>
+              <path d="M25.1252 22.8745H8.87508C8.35437 22.8745 7.93223 23.2966 7.93223 23.8173C7.93223 24.338 8.35437 24.7602 8.87508 24.7602H25.1252C25.6459 24.7602 26.068 24.338 26.068 23.8173C26.068 23.2966 25.6459 22.8745 25.1252 22.8745Z" fill="#3DB548" stroke="#3DB548" stroke-width="0.2"></path>
+            </svg>
+            Скачать документы
+          </a>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <%= _.template(require('./../includes/modals.html').default)() %> <%=
-  _.template(require('./../includes/footer.html').default)(data) %>
+<!-- <section class="start">
+  <div class="container">
+    <div class="start__wrap">
+      <h2>Дом на старте продаж!</h2>
+    </div>
+  </div>
+</section> -->
+
+</main>
+
+<%= _.template(require('./../includes/modals.html').default)() %> <%=
+_.template(require('./../includes/footer.html').default)(data) %>

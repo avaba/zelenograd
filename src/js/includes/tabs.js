@@ -33,7 +33,7 @@ $(function(){
 
   $item.on('click', function(){
     let target = $(this).data('target');
-    $('.layouts-slide').slick('reinit');
+    $('.layouts-slide').slick('setPosition');
     $('.tabs-content__item[data-id=' + target + ']').addClass('tabs-content__item--active').siblings().removeClass('tabs-content__item--active');
   }); 
 

@@ -3,7 +3,7 @@ $pfx: "repair";
 .#{$pfx} {
 	overflow: hidden;
 	padding-bottom: 85px;
-	margin-bottom: 140px;
+	margin-bottom: 150px;
 	&__head {
 		display: grid;
 		grid-template-columns: repeat(12,minmax(88px,1fr));

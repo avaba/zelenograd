@@ -1,5 +1,88 @@
 $pfx: "pay";
 
 .#{$pfx} {
-  margin-bottom: 140px;
+  background-color: $plainBackground;
+  margin-bottom: 133px;
+  padding-top: 130px;
+  padding-bottom: 160px;
+  &__head {
+    display: grid;
+    grid-template-columns: 34% 1fr;
+    margin-bottom: 75px;
+  }
+}
+
+.#{$pfx}-offer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.6rem;
+  align-items: center;
+  &__form {
+    &-title {
+      margin-bottom: 10px;
+    }
+    &-desc {
+      color: $gray;
+      margin-bottom: 47px;
+    }
+  }
+}
+
+.#{$pfx}-mortgage {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5.6rem;
+  align-items: center;
+}
+
+.#{$pfx}-bank { 
+  &__head {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    &-title {
+      display: inline-block;
+      color: $gray;
+      font-size: 14px;
+    }
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 2.35fr 1fr;
+    gap: $grid-gap;
+    align-items: center;
+    background: $white;
+    padding: 15px 20px 15px 60px;
+    margin-bottom: 35px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &__logo {
+      display: flex;
+      align-items: center;
+      &-img {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $border-color-dark;
+        border-radius: 100%;
+        margin-right: 37px;
+      }
+    }
+    &__percent {
+      font-weight: bold;
+    }
+  }
+}
+
+.#{$pfx}-calc {
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__desc {
+    color: $gray;
+    margin-bottom: 40px;
+  }
 }

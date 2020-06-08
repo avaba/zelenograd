@@ -1,6 +1,7 @@
 $pfx: "infrastructure";
 
 .#{$pfx} {
+	margin-bottom: 80px;
 	&__head {
 		&-title {
 			margin-bottom: 12px;
@@ -9,7 +10,7 @@ $pfx: "infrastructure";
 }
 
 .#{$pfx}-slider {
-	margin-top: -75px;
+	margin-top: -75px !important;
 	padding-top: 130px;
 	.slick-slide {
 		padding: 0 15px;

@@ -1,15 +1,13 @@
 .tabs {
   &__wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     flex-wrap: wrap;
     border-bottom: 1px solid $border-color-dark;
     padding: 0 5%;
   }
   &__line {
-    flex-grow: 1;
-    flex-basis: 0;
     background: $accent;
     position: absolute;
     height: 3px;
@@ -18,8 +16,6 @@
     transition:all .3s linear;
   }
   &__item {
-    flex-grow: 1;
-    flex-basis: 0;
     text-align: center;
     color: $gray;
     transition:all .3s linear;

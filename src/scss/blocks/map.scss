@@ -1,0 +1,43 @@
+$pfx: "map";
+
+.#{$pfx} {
+  margin-bottom: 140px;
+  &__head {
+    background-color: $plainBackground;
+    padding: 25px;
+    margin-bottom: 40px;
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &_item {
+        display: flex;
+        align-items: center;
+        margin: 0 25px;
+        &:hover {
+          color: $accent;
+          cursor: pointer;
+          svg, path {
+            fill: $accent;
+          }
+        }
+        svg {
+          display: block;
+        }
+        span {
+          display: inline-block;
+        }
+        &-img {
+          margin-right: 12px;
+        }
+        &-title {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+##{$pfx} {
+  height: 700px;
+}

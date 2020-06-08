@@ -2,27 +2,30 @@ $(function(){
 
   let $el, leftPos, newWidth,
   $mainNav = $(".tabs .tabs__wrap");
-  $mainNav.append('<div class="tabs__line"></div>');
+  $(".tabs").each(function() {
+    $(this).find('.tabs__wrap').append('<div class="tabs__line"></div>');
+  });
   let $magicLine = $(".tabs__line");
   let $item = $('.tabs .tabs__wrap .tabs__item');
 
   $mainNav.on('click', '.tabs__item:not(.tabs__item--active)', function() {
-    $(this)
-    .addClass('tabs__item--active').siblings().removeClass('tabs__item--active')
+    $(this).addClass('tabs__item--active').siblings().removeClass('tabs__item--active')
   });
 
-  $magicLine
-  .width($(".tabs__item--active").width())
-  .css("left", $(".tabs__item--active").position().left)
-  .data("origLeft", $magicLine.position().left)
-  .data("origWidth", $magicLine.width());
+  $(".tabs .tabs__wrap").each(function() {
+    $(this).find('.tabs__line')
+    .width($(".tabs__item--active", this).width())
+    .css("left", $(".tabs__item--active", this).position().left)
+    .data("origLeft", $(".tabs__line", this).position().left)
+    .data("origWidth", $(".tabs__line", this).width());
+  });
 
   $item.find("span").click(function() {
     $el = $(this);
     leftPos = $el.position().left;
     newWidth = $el.parent().width();
 
-    $magicLine.stop().animate({
+    $el.closest('.tabs__wrap').find('.tabs__line').stop().animate({
       left: leftPos,
       width: newWidth
     }, 0);

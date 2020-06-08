@@ -17,14 +17,13 @@ input {
     box-shadow: none;
     display: flex;
     align-items: center;
-    background-color: $neutralColor;
     padding: 0 1.25rem;
     font-size: 1rem;
     line-height: 1;
     color: $input-color;
     height: 68px;
     width: 100%;
-    background: $input-bg;
+    background: rgba(255, 255, 255, 0);
     border-radius: $input-border-radius;
     &::placeholder {
       color: $input-placeholder-color;

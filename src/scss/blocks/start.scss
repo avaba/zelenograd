@@ -1,0 +1,32 @@
+$pfx: "start";
+
+.#{$pfx} {
+	color: $white;
+	margin: 140px 0;
+	&__wrap {
+		background: $primaryColor-3;
+		display: grid;
+		grid-template-columns: repeat(12,minmax(88px,1fr));
+		padding: 110px 0;
+		align-items: center;
+		border-radius: 200px 0 200px 0;
+		background-image: url(../img/start-bg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		&__content {
+			grid-column: 3/6;
+			&-title {
+				line-height: 1;
+				margin-bottom: 20px;
+			}
+			&-desc {
+				strong {
+					display: inline-block;
+				}
+			}
+		}
+		&__form {
+			grid-column: 7/11;
+		}
+	}
+}

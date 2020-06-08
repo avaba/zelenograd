@@ -1,7 +1,11 @@
 $pfx: "footer";
 
 .#{$pfx} {
-  &__container {
-    background-color: #000;
+  background: $primaryColor-3;
+  color: $white;
+  padding: 65px 0;
+  p {
+  	opacity: .5;
+  	font-weight: 300;
   }
 }

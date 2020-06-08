@@ -5,7 +5,6 @@
 @import "./_type.scss";
 
 @import "./pugins/alerts.scss";
-@import "./pugins/nouislider.scss";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 // @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 
@@ -27,6 +26,9 @@
 @import "./blocks/pay.scss";
 @import "./blocks/map.scss";
 @import "./blocks/developer.scss";
+@import "./blocks/start.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
 
 
 // components end
@@ -42,5 +44,6 @@
 @import "./elements/tabs.scss";
 @import "./elements/more-one-slide.scss";
 @import "./pugins/slick.scss";
+@import "./pugins/noUi.scss";
 
 // elements end

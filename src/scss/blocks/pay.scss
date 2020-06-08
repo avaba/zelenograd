@@ -30,7 +30,7 @@ $pfx: "pay";
 
 .#{$pfx}-mortgage {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 43%;
   gap: 5.6rem;
   align-items: center;
 }
@@ -84,5 +84,23 @@ $pfx: "pay";
   &__desc {
     color: $gray;
     margin-bottom: 40px;
+  }
+  &__range {
+    margin-bottom: 40px;
+    &:last-of-type {
+      margin-bottom: 80px;
+    }
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 17px;
+      &-title {
+        color: $gray;
+        font-size: 14px;
+      }
+      &-value {
+        font-weight: bold;
+      }
+    }
   }
 }

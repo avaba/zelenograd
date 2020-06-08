@@ -16,7 +16,9 @@ import "./includes/repair";
 import "./includes/infrastructure";
 import "./includes/layouts";
 import "./includes/count";
+import "./includes/pay-calc";
 
 import "./modules/validate";
+
 
 // import './blocks/page';

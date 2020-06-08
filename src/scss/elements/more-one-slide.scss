@@ -1,0 +1,12 @@
+.more-one-slide {
+  margin:  0 -15px;
+  .slick-slide {
+    padding: 0 15px;
+  }
+  .slick-prev {
+    left: -15px;
+  }
+  .slick-next {
+    right: -15px;
+  }
+}

@@ -1,10 +1,37 @@
 $pfx: "layouts";
 
 .#{$pfx} { 
-  margin-bottom: 145px;
+  margin-bottom: 200px;
   &__head {
     display: grid;
     grid-template-columns: 34% 1fr;
+    margin-bottom: 75px;
   }
 }
 
+.#{$pfx}-slide {
+  &__item {
+    border: 1px solid $border-color-dark;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    &-img {
+      margin-top: 25px;
+      margin-bottom: 5px;
+      img {
+        margin: 0 auto;
+      }
+    }
+    &--title {
+      margin-bottom: 20px;
+    }
+    .form-button {
+      display: inline-flex;
+      margin-bottom: -20px;
+      margin-bottom: -30px;
+      align-self: center;
+    }
+  }
+}

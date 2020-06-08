@@ -8,7 +8,6 @@
 @import "./pugins/nouislider.scss";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 // @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
-@import "./pugins/slick.scss";
 
 // functions
 @import "./functions/colors.scss";
@@ -22,8 +21,11 @@
 @import "./blocks/stock.scss";
 @import "./blocks/features.scss";
 @import "./blocks/video.scss";
+@import "./blocks/layouts.scss";
 @import "./blocks/repair.scss";
 @import "./blocks/infrastructure.scss";
+@import "./blocks/pay.scss";
+
 
 // components end
 
@@ -36,5 +38,7 @@
 @import "./elements/ui-multiselect.scss";
 @import "./elements/ui-multirange.scss";
 @import "./elements/tabs.scss";
+@import "./elements/more-one-slide.scss";
+@import "./pugins/slick.scss";
 
 // elements end

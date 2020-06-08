@@ -1,41 +1,37 @@
-let tabsHeaders = document.querySelectorAll('.tabs .tabs__item');
-let tabsBorder = document.querySelector('.tabs .tabs__line');
-let tabs = document.querySelectorAll('.tabs-content .tabs-content__item');
+$(function(){
 
-for (let i = 0; i < tabsHeaders.length; i++) {
-  tabsHeaders[i].onclick = () => {
+  let $el, leftPos, newWidth,
+  $mainNav = $(".tabs .tabs__wrap");
+  $mainNav.append('<div class="tabs__line"></div>');
+  let $magicLine = $(".tabs__line");
+  let $item = $('.tabs .tabs__wrap .tabs__item');
 
-    for (let i = 0; i < tabsHeaders.length; i++) {
-      tabsHeaders[i].classList.remove('tabs__item--active')
-      tabs[i].classList.remove('tabs-content__item--active')
-    }
+  $mainNav.on('click', '.tabs__item:not(.tabs__item--active)', function() {
+    $(this)
+    .addClass('tabs__item--active').siblings().removeClass('tabs__item--active')
+  });
 
-    tabsHeaders[i].classList.add('tabs__item--active');
-    tabs[i].classList.add('tabs-content__item--active')
+  $magicLine
+  .width($(".tabs__item--active").width())
+  .css("left", $(".tabs__item--active").position().left)
+  .data("origLeft", $magicLine.position().left)
+  .data("origWidth", $magicLine.width());
 
-    if (i === 0) {
-      tabsBorder.classList.add('tabs__line--1');
-      tabsBorder.classList.remove('tabs__line--2')
-      tabsBorder.classList.remove('tabs__line--3')
-      tabsBorder.classList.remove('tabs__line--4')
-    }
-    if (i === 1) {
-      tabsBorder.classList.remove('tabs__line--1')
-      tabsBorder.classList.add('tabs__line--2');
-      tabsBorder.classList.remove('tabs__line--3')
-      tabsBorder.classList.remove('tabs__line--4')
-    }
-    if (i === 2) {
-      tabsBorder.classList.remove('tabs__line--1')
-      tabsBorder.classList.remove('tabs__line--2')
-      tabsBorder.classList.add('tabs__line--3');
-      tabsBorder.classList.remove('tabs__line--4');
-    }
-    if (i === 3) {
-      tabsBorder.classList.remove('tabs__line--1')
-      tabsBorder.classList.remove('tabs__line--2')
-      tabsBorder.classList.remove('tabs__line--3');
-      tabsBorder.classList.add('tabs__line--4');
-    }
-  }
-}
+  $item.find("span").click(function() {
+    $el = $(this);
+    leftPos = $el.position().left;
+    newWidth = $el.parent().width();
+
+    $magicLine.stop().animate({
+      left: leftPos,
+      width: newWidth
+    }, 0);
+  });
+
+  $item.on('click', function(){
+    let target = $(this).data('target');
+    $('.layouts-slide').slick('reinit');
+    $('.tabs-content__item[data-id=' + target + ']').addClass('tabs-content__item--active').siblings().removeClass('tabs-content__item--active');
+  }); 
+
+});

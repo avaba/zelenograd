@@ -10,11 +10,12 @@ import "core-js/features/global-this";
 
 import "./includes/header";
 import "./includes/footer";
-import "./includes/count";
 import "./includes/stock";
 import "./includes/tabs";
 import "./includes/repair";
 import "./includes/infrastructure";
+import "./includes/layouts";
+import "./includes/count";
 
 import "./modules/validate";
 

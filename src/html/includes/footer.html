@@ -1,8 +1,30 @@
 <footer class="footer">
-  <div class="container">
-  	<p>© 2020 ЖК Зеленодар. Все права защищены</p>
-  </div>
+	<div class="container">
+		<p>© 2020 ЖК Зеленодар. Все права защищены</p>
+	</div>
 </footer>
+
+<div class="d-none">
+	<div id="call-me" class="modal">
+		<h4 class="modal__title">Заголовок</h4>
+		<p class="modal__desc">Подзаголовок</p>
+		<form class="stock-slider__form">
+			<div class="stock-slider__form-col form-input-secondary">
+				<input type="tel" class="js-phone required" autocomplete="off" name="ORDER[PHONE]" placeholder="+7 (___) ___-__-__" tabindex="0">
+			</div>
+			<div class="stock-slider__form-col">
+				<button class="form-button-primary d-block w-100" tabindex="0"><span>Перезвоните мне</span></button>
+			</div>
+			<div class="stock-slider__form-col form-checkbox">
+				<label class="checkbox checkbox-white">
+					<input class="checkbox__input required" name="privacy" type="checkbox" checked="" tabindex="0">
+					<div class="checkbox__toggle"></div>
+					<div class="checkbox__text">Я согласен на <a href="#" tabindex="0">обработку персональных данных</a></div>
+				</label>
+			</div>
+		</form>
+	</div>
+</div>	
 
 <script src="js/bundle.js"></script>
 </body>

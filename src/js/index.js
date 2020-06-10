@@ -1,6 +1,8 @@
 import "expose-loader?$!jquery";
 import "expose-loader?jQuery!jquery";
 require("slick-carousel");
+// var $ = require('jquery');
+require('fancybox')($);
 // polyfills
 import "core-js/features/object/assign";
 import "core-js/features/string/repeat";
@@ -19,6 +21,7 @@ import "./includes/count";
 import "./includes/pay-calc";
 
 import "./modules/validate";
+import "./modules/modals";
 
 
 // import './blocks/page';

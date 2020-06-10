@@ -1,0 +1,51 @@
+.fancybox-margin {
+	margin-right: 0 !important;
+	overflow-y: auto !important;
+}
+
+.fancybox-lock {
+	.fancybox-overlay {
+		overflow-y: hidden;
+	}
+}
+
+.fancybox-close {
+	top: 45px;
+	right: 45px;
+	width: 26px;
+	height: 26px;
+	background-size: cover;
+}
+
+.fancybox-opened .fancybox-skin {
+	box-shadow: none;
+}
+
+.modal {
+	padding: 115px 45px;
+	width: 565px;
+	max-width: 100%;
+	background-color: $primaryColor-3;
+	background-image: url(../img/modal-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $white;
+	text-align: center;
+	&__title {
+		font-weight: 500;
+		margin-bottom: 20px;
+		font-size: $fontSizeXL;
+	}
+	&__desc {
+		font-weight: 300;
+		margin-bottom: 40px;
+	}
+	.stock-slider__form-col:first-of-type, .stock-slider__form-col:nth-of-type(2) {
+		display: block;
+		margin: 0 auto;
+	}
+	.form-checkbox {
+		display: flex;
+		justify-content: center;
+	}
+}

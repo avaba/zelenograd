@@ -62,7 +62,7 @@ noUiSlider.create(year, {
 	step: 1,
 	connect: 'lower',
 	range: {
-		'min': [0],
+		'min': [2],
 		'max': [25]
 	},
 	format: wNumb({

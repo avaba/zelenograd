@@ -19,6 +19,7 @@ import "./includes/infrastructure";
 import "./includes/layouts";
 import "./includes/count";
 import "./includes/pay-calc";
+import "./includes/map";
 
 import "./modules/validate";
 import "./modules/modals";

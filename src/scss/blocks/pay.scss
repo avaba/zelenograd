@@ -191,9 +191,22 @@ $pfx: "pay";
       &-title {
         color: $gray;
         font-size: 14px;
+        br {
+          display: none;
+          @media (max-width: 480px) {
+            display: block;
+          }
+        }
       }
       &-value {
         font-weight: bold;
+        white-space: nowrap;
+        br {
+          display: none;
+          @media (max-width: 480px) {
+            display: block;
+          }
+        }
       }
     }
   }

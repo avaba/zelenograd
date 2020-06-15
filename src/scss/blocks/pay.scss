@@ -5,19 +5,66 @@ $pfx: "pay";
   margin-bottom: 133px;
   padding-top: 130px;
   padding-bottom: 160px;
+  @media (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   &__head {
     display: grid;
     grid-template-columns: 34% 1fr;
     margin-bottom: 75px;
+    @media (max-width: 1200px) {
+      grid-template-columns: 100%;
+      gap: $grid-gap;
+    }
   }
 }
 
 .#{$pfx}-offer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 30% 70%;
   gap: 5.6rem;
   align-items: center;
+  @media (max-width: 1200px) {
+    gap: 30px;
+    grid-template-columns: 50% 44%;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 100%;
+  }
+  &__img {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
   &__form {
+    @media (max-width: 992px) {
+      .home-offer__form {
+        grid-template-columns: 100%;
+        gap: $grid-gap;
+        &-col{
+          &:nth-of-type(1) {
+            grid-column: 1;
+          }
+          &:nth-of-type(2) {
+            grid-column: 1;
+            .form-button-primary {
+              width: 100%;
+              span {
+                padding: 1.1em 0;
+                width: 100%;
+              }
+            } 
+          }
+          &:nth-of-type(3) {
+            grid-column: 1;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 0 15px;
+    }
     &-title {
       margin-bottom: 10px;
     }

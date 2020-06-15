@@ -3,9 +3,13 @@
     display: flex;
     justify-content: space-around;
     position: relative;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     border-bottom: 1px solid $border-color-dark;
     padding: 0 5%;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
   }
   &__line {
     background: $accent;

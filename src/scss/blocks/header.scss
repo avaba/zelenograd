@@ -24,9 +24,16 @@ $pfx: "header";
 		grid-template-columns: 310px 1fr;
 		grid-template-areas: "logo header";
 		column-gap: $grid-gap;
+		@media (max-width: 576px) {
+			grid-template-columns: 1fr 1.1fr;
+			column-gap: 10px;
+		}
 	}
 	&__logo {
 		grid-area: logo;
+		img {
+			max-width: 100%;
+		}
 	}
 	&__right {
 		display: grid;
@@ -38,18 +45,39 @@ $pfx: "header";
 		grid-area: header;
 		padding-bottom: 35px;
 		transition: all .2s;
+		@media (max-width: 992px) {
+			grid-template-columns: repeat(2,auto);
+			.#{$pfx}__call {
+				display: none;
+			}
+		}
+		@media (max-width: 768px) {
+			column-gap: 0;
+			padding-bottom: 15px;
+			.#{$pfx}__menu {
+				display: none;
+			}
+		}
 	}
 	&__phone {
 		display: grid;
 		grid-template-columns: auto auto;
 		align-items: center;
 		grid-area: phone;
+		@media (max-width: 576px) {
+			font-size: 14px;
+			img {
+				width: 10px;
+			}
+		}
 		img {
 			margin-right: 9px;
 		}
 		a {
 			color: $bodyColor;
 			font-weight: bold;
+			display: inline-block;
+			white-space: nowrap;
 		}
 	}
 	&__call {

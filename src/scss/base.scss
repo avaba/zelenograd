@@ -42,9 +42,11 @@ h2, h3 {
   margin: 0 auto;
   max-width: 1529px;
   width: 100%;
-  @media (max-width: 1300px) {
-    padding: 0 1rem;
-  }
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
 }
 
 svg.inlineIcon {
@@ -57,6 +59,7 @@ main {
   position: relative;
   // max-width: 1920px;
   width: 100%;
+  overflow: hidden;
 }
 
 strong {
@@ -77,6 +80,11 @@ section {
   }
   h3 {
     font-size: $fontSizeXL;
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: $fontSizeLG; 
+    }
   }
 }
 
@@ -118,6 +126,10 @@ section {
     border-radius: 100%;
     transform: translate(-50%, -50%);
     transition: all .2s ease-out;
+    @media (max-width: 576px) {
+      width: 60px;
+      height: 60px;
+    }
   }
   &:after {
     content: '';
@@ -132,15 +144,27 @@ section {
     background-size: cover;
     transform: translate(-50%, -50%);
     transition: all .2s ease-out;
+    @media (max-width: 576px) {
+      width: 13px;
+      height: 15px;
+    }    
   }
   &:hover {
     &:before {
       width: 140px;
       height: 140px;
+      @media (max-width: 576px) {
+        width: 60px;
+        height: 60px;
+      }
     }
     &:after {
       width: 34px;
       height: 39px;
+      @media (max-width: 576px) {
+        width: 13px;
+        height: 15px;
+      } 
     }
   }
 }

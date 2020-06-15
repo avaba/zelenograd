@@ -49,6 +49,9 @@
 .slick-prev {
 	border-radius: 0% 60% 0% 60%;
 	background: $gradientLinearHover;
+	@media (max-width: 1568px) {
+		left: 15px;
+	}
 	left: -30px;
 	&:before {
 		border-radius: 0% 60% 0% 60%;
@@ -67,6 +70,9 @@
 	background: $gradientLinear;
 	border-radius: 60% 0 60%;
 	right: -30px;
+	@media (max-width: 1568px) {
+		right: 15px;
+	}
 	&:before {
 		background: $gradientLinearHover;
 		border-radius: 60% 0 60%;

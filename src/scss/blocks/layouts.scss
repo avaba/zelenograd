@@ -2,14 +2,43 @@ $pfx: "layouts";
 
 .#{$pfx} { 
   margin-bottom: 200px;
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
   &__head {
     display: grid;
     grid-template-columns: 34% 1fr;
     margin-bottom: 75px;
+    &-col:last-of-type {
+      overflow: hidden;
+      overflow-x: auto;
+    }
+    @media (max-width: 992px) {
+      grid-template-columns: 100%; 
+      gap: $grid-gap;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 40px;
+      .tabs__wrap {
+        width: 550px;
+      }
+    } 
   }
 }
 
 .#{$pfx}-slide {
+  @media (max-width: 1200px) {
+    padding: 0 60px;
+    .slick-prev {
+      left: 0 !important;
+    }
+    .slick-next {
+      right: 0 !important;
+    }
+  }
+  @media (max-width: 576px) {
+    padding: 0 30px;
+  }
   &__item {
     border: 1px solid $border-color-dark;
     text-align: center;

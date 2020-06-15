@@ -6,6 +6,13 @@ $pfx: "about";
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     column-gap: $grid-gap;
+    @media (max-width: 1200px) {
+      grid-template-columns: 50% 50%;
+    }
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+      row-gap: $grid-gap;
+    }
     &-title {
       margin-bottom: 1.38rem;
     }
@@ -19,6 +26,12 @@ $pfx: "about";
     column-gap: $grid-gap;
     row-gap: $grid-gap-big;
     align-self: center;
+    @media (max-width: 1200px) {
+      grid-template-columns: 46% 50%;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: 100%;
+    }
     &_item {
       border-left: 2px solid $accent;
       padding-left: 1.66rem;

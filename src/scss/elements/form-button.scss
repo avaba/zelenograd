@@ -27,6 +27,9 @@ $pfx: "form-button";
     background: $gradientLinear;
     position: relative;
     transition: all .3s;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
     &:before {
       content: '';
       position: absolute;

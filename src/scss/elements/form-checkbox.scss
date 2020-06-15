@@ -45,6 +45,7 @@ $pfx: "checkbox";
       opacity: 0.8;
       color: $gray;
       text-decoration: underline;
+      display: inline-block;
       &:hover {
         text-decoration: underline;
         opacity: 1;

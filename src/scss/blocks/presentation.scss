@@ -2,13 +2,22 @@ $pfx: "presentation";
 
 .#{$pfx} {
 	margin-bottom: 160px;
-	&__title {
-		margin-bottom: 2rem;
-	}
-	&__form {
-		display: grid;
-		grid-template-columns: 290px auto;
-		column-gap: $grid-gap;
-
-	}
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 290px auto;
+    column-gap: $grid-gap;
+    @media (max-width: 768px) {
+      grid-template-columns: 100%;
+      row-gap: $grid-gap;
+      .form-button-primary {
+        width: 100%;
+      }
+    }
+  }
 }

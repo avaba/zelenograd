@@ -22,7 +22,7 @@ $pfx: "pay";
 
 .#{$pfx}-offer {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 40% 70%;
   gap: 5.6rem;
   align-items: center;
   @media (max-width: 1200px) {

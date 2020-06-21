@@ -18,7 +18,7 @@ const notyf = new Notyf({
 const tels = document.querySelectorAll("input[type='tel']");
 var maskOptions = {
   mask: '+{7} (000) 000 - 00 - 00',
-  lazy: false,
+  lazy: true,
 };
 tels.forEach(function (tel) {
   const mask = new IMask(tel, maskOptions);

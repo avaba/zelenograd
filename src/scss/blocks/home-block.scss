@@ -21,11 +21,6 @@ $pfx: "home-block";
 		&-col {
 			&:first-of-type {
 				grid-column: 1/6;
-				.form-button-primary {
-					span {
-						padding: 1.1em 1.3em;
-					}
-				}
 				@media (max-width: 768px) {
 					grid-template-columns: 1fr;
 					column-gap: 0;
@@ -39,6 +34,9 @@ $pfx: "home-block";
 			&:last-of-type {
 				grid-column: 6/13;
 				text-align: right;
+				@media (max-width: 1370px) {
+					grid-column: 7/13;
+				}
 				@media (max-width: 768px) {
 					display: none;
 					column-gap: 0;
@@ -83,7 +81,7 @@ $pfx: "home-block";
 		background: $accent;
 		color: $white;
 		text-align: center;
-		padding: 8px 25px;
+		padding: 9px 25px 6px 25px;
 		text-transform: uppercase;
 		letter-spacing: 0.085em;
 		margin-bottom: 66px;

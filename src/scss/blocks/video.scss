@@ -14,6 +14,9 @@ $pfx: "video";
     @media (max-width: 576px) {
       grid-template-columns: 100%;
     }
+    &-desc {
+      padding-top: 17px;
+    }
   }
   &__wrap {
     overflow: hidden;

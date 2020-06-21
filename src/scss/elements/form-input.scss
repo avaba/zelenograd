@@ -17,7 +17,7 @@ input {
     box-shadow: none;
     display: flex;
     align-items: center;
-    padding: 0 1.25rem;
+    padding: 0 1.25rem 0 40px;
     font-size: 1rem;
     line-height: 1;
     color: $input-color;
@@ -25,9 +25,12 @@ input {
     width: 100%;
     background: rgba(255, 255, 255, 0);
     border-radius: $input-border-radius;
+    &::-webkit-input-placeholder {
+        color: $input-placeholder-color; 
+    }
     &::placeholder {
-      color: $input-placeholder-color;
-  }
+        color: $input-placeholder-color;
+    }
 }
 
 &-secondary {
@@ -41,6 +44,12 @@ input {
         height: 68px;
         width: 100%;
         padding: 0 1.25rem;
+        &::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.5); 
+        }
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
 }

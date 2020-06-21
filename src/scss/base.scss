@@ -92,6 +92,7 @@ section {
   color: $accent;
   display: inline-flex;
   align-items: center;
+  font-weight: 500;
   &:hover {
     color: $primaryColor-3;
     svg, path {
@@ -144,6 +145,7 @@ section {
     background-size: cover;
     transform: translate(-50%, -50%);
     transition: all .2s ease-out;
+    margin-left: 2px;
     @media (max-width: 576px) {
       width: 13px;
       height: 15px;

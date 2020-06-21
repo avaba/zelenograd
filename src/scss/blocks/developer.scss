@@ -4,14 +4,21 @@ $pfx: "developer";
   overflow: hidden;
   &__wrap {
     display: grid;
-    grid-template-columns: 50% 41%;
-    gap: 8.1rem;  
+    grid-template-columns: 1fr 1fr;
+    gap: 8.1rem; 
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+      gap: $grid-gap;
+    } 
   } 
   &__desc {
     margin-top: 70px;
     margin-bottom: 90px;
     border-left: 3px solid $accent;
     padding-left: 40px;
+    @media (max-width: 576px) {
+      margin: 20px 0;
+    }
   }
   &__ask {
     height: 497px;
@@ -21,6 +28,9 @@ $pfx: "developer";
     background-color: $primaryColor-3;
     border-radius: 0 200px 0 0;
     position: relative;
+    @media (max-width: 576px) {
+      padding: 50px;
+    }
     img {
       position: relative;
       z-index: 1;
@@ -58,6 +68,10 @@ $pfx: "developer";
   margin-bottom: 35px;
   padding: 90px 130px;
   border-radius: 0 0 200px 0;
+  @media (max-width: 576px) {
+    padding: 50px 30px;
+    border-radius: 0 0 60px 0;
+  }
   &__item {
     display: flex;
     flex-direction: column;
@@ -70,6 +84,9 @@ $pfx: "developer";
       text-transform: uppercase;
       font-weight: 500;
       line-height: 1;
+      @media (max-width: 576px) {
+        font-size: 60px;
+      }
     }
     &-text {
       color: $gray;

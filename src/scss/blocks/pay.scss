@@ -8,6 +8,7 @@ $pfx: "pay";
   @media (max-width: 992px) {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-bottom: 60px;
   }
   &__head {
     display: grid;
@@ -17,6 +18,15 @@ $pfx: "pay";
       grid-template-columns: 100%;
       gap: $grid-gap;
     }
+    &-col:last-of-type {
+      overflow: hidden;
+      overflow-x: auto;
+    }
+    @media (max-width: 576px) {
+      .tabs__wrap {
+        width: 550px;
+      }
+    } 
   }
 }
 
@@ -78,8 +88,37 @@ $pfx: "pay";
 .#{$pfx}-mortgage {
   display: grid;
   grid-template-columns: 50% 43%;
-  gap: 5.6rem;
+  gap: 5rem;
   align-items: center;
+  @media (max-width: 1530px) {
+    grid-template-columns: 50% 42%;
+  }
+  @media (max-width: 1200px) { 
+    grid-template-columns: 50% 40%;
+  }
+  @media (max-width: 992px) { 
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  @media (max-width: 768px) { 
+    grid-template-columns: 100%;
+    gap: 2rem;
+  }
+  .home-offer__form {
+    @media (max-width: 1530px) {
+      grid-template-columns: 100%;
+      gap: $grid-gap;
+      &-col:first-of-type, &-col:nth-of-type(2), &-col:nth-of-type(3) {
+        grid-column: 1;
+      }
+      .form-button-primary {
+        width: 100%;
+        span {
+          padding: 1.1em 0;
+        }
+      }
+    }
+  }
 }
 
 .#{$pfx}-bank { 
@@ -104,9 +143,17 @@ $pfx: "pay";
     &:last-of-type {
       margin-bottom: 0;
     }
+    @media (max-width: 480px) {
+      padding: 15px 20px 15px 15px;
+      grid-template-columns: 100%;
+      text-align: center;
+    }
     &__logo {
       display: flex;
       align-items: center;
+      @media (max-width: 480px) {
+        justify-content: center;
+      }
       &-img {
         height: 60px;
         width: 60px;
@@ -144,9 +191,22 @@ $pfx: "pay";
       &-title {
         color: $gray;
         font-size: 14px;
+        br {
+          display: none;
+          @media (max-width: 480px) {
+            display: block;
+          }
+        }
       }
       &-value {
         font-weight: bold;
+        white-space: nowrap;
+        br {
+          display: none;
+          @media (max-width: 480px) {
+            display: block;
+          }
+        }
       }
     }
   }

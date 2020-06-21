@@ -3,6 +3,11 @@ $pfx: "infrastructure";
 .#{$pfx} {
 	margin-bottom: 80px;
 	&__head {
+		padding-right: 155px;
+		@media (max-width: 480px) {
+			padding-right: 0;
+			margin-bottom: 30px;
+		}
 		&-title {
 			margin-bottom: 12px;
 		}
@@ -12,6 +17,10 @@ $pfx: "infrastructure";
 .#{$pfx}-slider {
 	margin-top: -75px !important;
 	padding-top: 130px;
+	@media (max-width: 480px) {
+		margin-top: 0px !important;
+		padding-top: 100px;
+	}
 	.slick-slide {
 		padding: 0 15px;
 	}
@@ -23,6 +32,9 @@ $pfx: "infrastructure";
 	}
 	.count__wrap {
 		right: 190px;
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
 	&__img {
 		margin-bottom: 30px;

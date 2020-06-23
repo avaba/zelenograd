@@ -12,6 +12,7 @@ $pfx: "about";
     @media (max-width: 992px) {
       grid-template-columns: 100%;
       row-gap: $grid-gap;
+      margin-bottom: 40px;
     }
     &-title {
       margin-bottom: 1.38rem;
@@ -41,6 +42,9 @@ $pfx: "about";
         line-height: $fontSizeBASE;
         margin-bottom: 1.1rem;
         font-weight: 500;
+        @media (max-width: 768px) {
+          font-size: 20px; 
+        }
       }
       &-text {
         font-weight: normal;

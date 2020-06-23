@@ -5,6 +5,12 @@ $pfx: "stock";
 }
 
 .stock-slider {
+	.slick-list {
+		margin: 0 -5px;
+	}
+	.slick-slide {
+		margin: 0 5px;
+	}
 	@media (max-width: 576px) {
 		.slick-arrow {
 			top: 88%;
@@ -14,8 +20,8 @@ $pfx: "stock";
 		background-color: $primaryColor-3;
 		background-image: url(../img/stock-bg.svg);
 		background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 40% 100%;
+		background-position: center right;
+		background-size: 40% 100%;
 		overflow: hidden;
 		border-radius: 0px 200px 0px 200px;
 		display: grid;
@@ -63,6 +69,7 @@ $pfx: "stock";
 				}
 				@media (max-width: 992px) {
 					grid-column: 2/5;
+					padding: 50px 0;
 				}
 				@media (max-width: 768px) {
 					grid-column: 1;

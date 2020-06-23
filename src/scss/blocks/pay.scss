@@ -18,6 +18,9 @@ $pfx: "pay";
       grid-template-columns: 100%;
       gap: $grid-gap;
     }
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
     &-col:last-of-type {
       overflow: hidden;
       overflow-x: auto;
@@ -35,6 +38,9 @@ $pfx: "pay";
   grid-template-columns: 40% 70%;
   gap: 5.6rem;
   align-items: center;
+  @media (max-width: 1290px) {
+    gap: 30px;
+  }
   @media (max-width: 1200px) {
     gap: 30px;
     grid-template-columns: 50% 44%;
@@ -48,7 +54,7 @@ $pfx: "pay";
     }
   }
   &__form {
-    @media (max-width: 992px) {
+    @media (max-width: 1199.98px) {
       .home-offer__form {
         grid-template-columns: 100%;
         gap: $grid-gap;
@@ -145,14 +151,15 @@ $pfx: "pay";
     }
     @media (max-width: 480px) {
       padding: 15px 20px 15px 15px;
-      grid-template-columns: 100%;
       text-align: center;
+      display: flex;
     }
     &__logo {
       display: flex;
       align-items: center;
       @media (max-width: 480px) {
-        justify-content: center;
+        justify-content: flex-start;
+        margin-right: 15px;
       }
       &-img {
         height: 60px;
@@ -167,6 +174,9 @@ $pfx: "pay";
     }
     &__percent {
       font-weight: bold;
+      @media (max-width: 480px) {
+        text-align: left;
+      }
     }
   }
 }

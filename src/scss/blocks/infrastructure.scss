@@ -18,8 +18,20 @@ $pfx: "infrastructure";
 	margin-top: -75px !important;
 	padding-top: 130px;
 	@media (max-width: 480px) {
-		margin-top: 0px !important;
-		padding-top: 100px;
+		margin-top: 0 !important;
+		padding-top: 0;
+		padding-bottom: 70px;
+		.slick-arrow {
+			top: auto !important;
+			bottom: 0 !important;
+			right: 50% !important;
+			&.slick-next {
+				margin-right: -70px;
+			}
+			&.slick-prev {
+				margin-right: 10px;
+			}
+		} 
 	}
 	.slick-slide {
 		padding: 0 15px;
@@ -32,7 +44,7 @@ $pfx: "infrastructure";
 	}
 	.count__wrap {
 		right: 190px;
-		@media (max-width: 768px) {
+		@media (max-width: 1199.98px) {
 			display: none;
 		}
 	}

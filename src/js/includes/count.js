@@ -12,7 +12,7 @@ $('.features-slider').slick({
 
 // Счетчик слайдов Особенности ЖК
 
-let count    = $('.count')
+let count    = $('.features-slider')
 total        = count.slick("getSlick").slideCount;
 currentSlide = count.slick('slickCurrentSlide');
 slide        = currentSlide + 1;
@@ -34,12 +34,12 @@ if ( total > 1 ) {
     <span class="count__wrap-current">1</span> / <span class="count__wrap-total">2</span>
     </div>`
     )
-  $(".count__wrap-current").text(slide);
-  $('.count__wrap-total').text(total);
+  $(".features-slider .count__wrap-current").text(slide);
+  $('.features-slider .count__wrap-total').text(total);
 }
 count.on('afterChange', function(event, slick, currentSlide, nextSlide){
   let currentSl = currentSlide + 1;
-  $(".count__wrap-current").animate({'opacity': 0}, 150, function () {
+  $(".features-slider .count__wrap-current").animate({'opacity': 0}, 150, function () {
     $(this).text(currentSl);
   }).animate({'opacity': 1}, 150);
 });

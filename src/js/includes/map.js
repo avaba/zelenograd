@@ -13,134 +13,195 @@ var sport_in = [];
 health = [{
 	iconImageHref: './img/health.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.095221, 39.013487],
-	balloonContent: "пер. Топольковый",
+	position: [45.131117, 38.969568],
+	balloonContent: "Городская поликлиника № 8",
 }, {
 	iconImageHref: './img/health.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.087248, 39.014061],
-	balloonContent: "ТЦ 'Лента'",
+	position: [45.138237, 38.995208],
+	balloonContent: "Детская поликлиника №8",
+}, {
+	iconImageHref: './img/health.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.117081, 	38.997382],
+	balloonContent: "Городская поликлиника №13",
+}, {
+	iconImageHref: './img/health.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [	45.130961, 	38.988927],
+	balloonContent: "Медицинский центр МедЭко",
+}, {
+	iconImageHref: './img/health.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [	45.127071, 	38.969881],
+	balloonContent: "Медицинский центр МедЭко",
 }]
 schools = [{
 	iconImageHref: './img/schools.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.100826, 38.986855],
-	balloonContent: "Школа № 98",
-}, {
+	position: [45.147472,39.000437],
+	balloonContent: "Школа №50",
+},{
 	iconImageHref: './img/schools.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.111717, 39.016272],
-	balloonContent: "Начальная школа № 94",
+	position: [45.112168,39.0163],
+	balloonContent: "Начальная школа №94",
+},{
+	iconImageHref: './img/schools.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.119612,38.993154],
+	balloonContent: "Школа №61",
+},{
+	iconImageHref: './img/schools.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.120285,38.988541],
+	balloonContent: "Парк-школа Лучистая",
+},{
+	iconImageHref: './img/schools.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.124681,38.982821],
+	balloonContent: "Школа №65",
 }]
 kinders = [{
 	iconImageHref: './img/kinders.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.091666, 39.008821],
-	balloonContent: "Грецкий орех, фитнес-центр",
+	position: [45.125364, 38.979013],
+	balloonContent: "Детский сад HappyBaby",
 }, {
 	iconImageHref: './img/kinders.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.088100, 39.009683],
-	balloonContent: "kinderss Life",
+	position: [45.135243, 38.991896],
+	balloonContent: "Детский сад-ясли Солнышко",
 }, {
 	iconImageHref: './img/kinders.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.088600, 39.005330],
-	balloonContent: "Red shark, фитнес-клуб",
+	position: [45.131454, 	38.975342],
+	balloonContent: "Детский сад Мишутка",
 }, {
 	iconImageHref: './img/kinders.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.087894, 38.998795],
-	balloonContent: "LIGHT FIT, фитнес-центр",
+	position: [45.126442, 	38.971384],
+	balloonContent: "Детский сад 3/9 царство",
 }, {
 	iconImageHref: './img/kinders.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.072527, 38.993881],
-	balloonContent: "Детский Сад № 219",
+	position: [45.129035,38.971163],
+	balloonContent: "Детский сад Rostok",
 }, {
 	iconImageHref: './img/kinders.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.073447, 39.013462],
-	balloonContent: "Детский сад 'Город детства'",
+	position: [45.131467,38.980266],
+	balloonContent: "Детский сад Мишутка",
 }]
 caffe = [{
 	iconImageHref: './img/caffe.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.090656, 38.988066],
-	balloonContent: "Детский сад № 220",
-}, {
+	position: [45.102319,38.980901],
+	balloonContent: "Сеть ресторанов быстрого питания Макдональдс",
+},{
 	iconImageHref: './img/caffe.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.098272, 38.986214],
-	balloonContent: "Детский сад № 100",
-}, {
+	position: [45.132548,38.995167],
+	balloonContent: "Бар Pinta Bar",
+},{
 	iconImageHref: './img/caffe.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.099217, 38.977435],
-	balloonContent: "Детский сад № 107 'Русалочка'",
-}, {
+	position: [45.123714,38.983355],
+	balloonContent: "Семейное Кафе Пончик",
+},{
 	iconImageHref: './img/caffe.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.100523, 39.001301],
-	balloonContent: "Детский сад № 107 'Русалочка'",
+	position: [45.122459,38.98667],
+	balloonContent: "Домашняя кухня",
+},{
+	iconImageHref: './img/caffe.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.143193,38.994639],
+	balloonContent: "Кафе Суши Wok",
+},{
+	iconImageHref: './img/caffe.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.136427,38.98566],
+	balloonContent: "Кондитерская Карамелька",
+},{
+	iconImageHref: './img/caffe.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.125874,39.009582],
+	balloonContent: "Кафе Не горюй",
+},{
+	iconImageHref: './img/caffe.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.11451,38.986033],
+	balloonContent: "Ресторан Макароны",
+},{
+	iconImageHref: './img/caffe.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.130169,38.996941],
+	balloonContent: "Ресторан, Opera Palace",
+},{
+	iconImageHref: './img/caffe.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.130729,38.972085],
+	balloonContent: "Кафе СушиТайм",
+},{
+	iconImageHref: './img/caffe.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.128793,38.969931],
+	balloonContent: "Кафе Гирос",
 }]
 shops = [{
 	iconImageHref: './img/shops.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.071624, 39.014676],
-	balloonContent: "Лукойл-Югнефтепродукт",
-}, {
+	position: [45.130778, 38.972508],
+	balloonContent: "Мясо Есть",
+},{
 	iconImageHref: './img/shops.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.079297, 39.000669],
-	balloonContent: "Роснефть",
-}, {
+	position: [45.133317, 38.985231],
+	balloonContent: "На Апрельской",
+},{
 	iconImageHref: './img/shops.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.075353, 39.001345],
-	balloonContent: "Роснефть",
-}, {
+	position: [45.131129, 38.967837],
+	balloonContent: "Продукты",
+},{
 	iconImageHref: './img/shops.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.091137, 39.013753],
-	balloonContent: "Газпром",
-}, {
+	position: [45.130573, 38.970682],
+	balloonContent: "Симпатия",
+},{
 	iconImageHref: './img/shops.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.097984, 38.998244],
-	balloonContent: "Лукойл",
-}, {
+	position: [45.129713, 38.970609],
+	balloonContent: "Апельсин",
+},{
 	iconImageHref: './img/shops.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.091636, 38.992059],
-	balloonContent: "АЗС 233 'Роснефть-Кубаньнефтепродукт'",
+	position: [45.128812, 38.970731],
+	balloonContent: "Магнит",
+},{
+	iconImageHref: './img/shops.svg',
+	iconImageSize: [icoMapSizeX, icoMapSizeY],
+	position: [45.129096, 38.985326],
+	balloonContent: "Продукты и хозтовары",
 }]
 sport = [{
 	iconImageHref: './img/sport.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.087186, 39.012217],
-	balloonContent: "Лента",
-}, {
+	position: [45.117525,38.981144],
+	balloonContent: "Спортивная арена Баскет-Холл",
+},{
 	iconImageHref: './img/sport.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.093989, 39.009142],
-	balloonContent: "Магнит",
-}, {
+	position: [45.115579,38.978773],
+	balloonContent: 'Ледовый дворец "Ice Palace"',
+},{
 	iconImageHref: './img/sport.svg',
 	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.093560, 39.003156],
-	balloonContent: "Магнит",
-}, {
-	iconImageHref: './img/sport.svg',
-	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.091694, 39.008817],
-	balloonContent: "Магнит",
-}, {
-	iconImageHref: './img/sport.svg',
-	iconImageSize: [icoMapSizeX, icoMapSizeY],
-	position: [45.094970, 39.016650],
-	balloonContent: "Магнит",
+	position: [45.123107,38.984595],
+	balloonContent: "Баскетбольный клуб Локомотив-Кубань",
 }]
+
 
 
 $('.map__head__list_item').click(function () {

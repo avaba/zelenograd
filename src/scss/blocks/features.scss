@@ -22,10 +22,8 @@ $pfx: "features";
     margin-bottom: 60px;
   }
   @media (max-width: 576px) {
-    background-size: contain;
-    h2 {
-      margin-bottom: 90px;
-    }
+    background-size: 210% 35%;
+    background-position: -22% 3%;
   }
 
   .#{$pfx}-slider {
@@ -39,8 +37,17 @@ $pfx: "features";
       } 
     }
     @media (max-width: 576px) {
+      padding-bottom: 85px;
       .slick-arrow {
-        top: -70px !important;
+        top: auto !important;
+        bottom: 0 !important;
+        right: 50%;
+        &.slick-next {
+          margin-right: -70px;
+        }
+        &.slick-prev {
+          margin-right: 10px;
+        }
       } 
     }  
     &__top {
@@ -94,6 +101,9 @@ $pfx: "features";
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: $grid-gap;
+      @media (max-width: 576px) {
+        grid-template-columns: 100%;
+      }
     }
   }
 }

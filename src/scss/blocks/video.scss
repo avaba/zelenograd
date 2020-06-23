@@ -13,6 +13,7 @@ $pfx: "video";
     gap: $grid-gap;
     @media (max-width: 576px) {
       grid-template-columns: 100%;
+      margin-bottom: 30px;
     }
     &-desc {
       padding-top: 17px;

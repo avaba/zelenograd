@@ -9,6 +9,9 @@
 html {
   font-size: 18px;
   font-weight: normal;
+  @media (max-width: 768px) {
+    font-size: 16px; 
+  }
 }
 body {
   color: $neutralColor;
@@ -83,7 +86,7 @@ section {
   }
   @media (max-width: 768px) {
     h2 {
-      font-size: $fontSizeLG; 
+      font-size: 35px; 
     }
   }
 }

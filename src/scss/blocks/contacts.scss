@@ -28,6 +28,9 @@ $pfx: "contacts";
 		align-items: center;
 		@media (max-width: 992px) {
 			margin-bottom: 30px;
+			&:nth-of-type(3) {
+				margin-left: 65px;
+			}
 		}
 		&.#{$pfx}-items__item_adres {
 			margin-left: auto;
